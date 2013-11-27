@@ -1,0 +1,231 @@
+<dictionary>
+  <alphabet/>
+  <sdefs>
+    <sdef n="n"    c="Noun"/>
+
+        <sdef n="np" />
+        <sdef n="det" />
+        <sdef n="cnjcoo" />
+        <sdef n="cnjadv" />
+        <sdef n="nom" />
+        <sdef n="num" />
+        <sdef n="int" />
+        <sdef n="vblex"/>
+        <sdef n="vbser"/>
+        <sdef n="sg"/>
+        <sdef n="pl"/>
+        <sdef n="pri"/>
+        <sdef n="def"/>
+        <sdef n="ind"/>
+        <sdef n="prn"/>
+        <sdef n="post"/>
+        <sdef n="pers"/>
+        <sdef n="adv"/>
+        <sdef n="adj"/>
+        <sdef n="apos"/>
+        <sdef n="rquot"/>
+        <sdef n="lquot"/>
+        <sdef n="rpar"/>
+        <sdef n="lpar"/>
+        <sdef n="sent"/>
+        <sdef n="guio"/>
+        <sdef n="cm"/>
+    <sdef n="ND"   c="Number to be determined"/>
+  </sdefs>
+  <section id="main" type="standard">
+
+    <!-- propers -->
+    <e><p><l>Jaakko<s n="np"/></l>
+          <r>Jaakko<s n="np"/></r></p></e>
+    <e><p><l>Mari<s n="np"/></l>
+          <r>Mari<s n="np"/></r></p></e>
+  
+   <!-- nums -->
+
+    <e><p><l>10<s n="num"/></l><r>10<s n="num"/></r></p></e>
+    <e><p><l>11<s n="num"/></l><r>11<s n="num"/></r></p></e>
+    <e><p><l>1<s n="num"/></l><r>1<s n="num"/></r></p></e>
+    <e><p><l>2<s n="num"/></l><r>2<s n="num"/></r></p></e>
+    <e><p><l>3<s n="num"/></l><r>3<s n="num"/></r></p></e>
+    <e><p><l>4<s n="num"/></l><r>4<s n="num"/></r></p></e>
+    <e><p><l>5<s n="num"/></l><r>5<s n="num"/></r></p></e>
+    <e><p><l>6<s n="num"/></l><r>6<s n="num"/></r></p></e>
+    <e><p><l>7<s n="num"/></l><r>7<s n="num"/></r></p></e>
+    <e><p><l>8<s n="num"/></l><r>8<s n="num"/></r></p></e>
+    <e><p><l>9<s n="num"/></l><r>9<s n="num"/></r></p></e>
+    
+    <e><p><l>yksi<s n="num"/></l><r>egy<s n="num"/></r></p></e>
+    <e><p><l>kaksi<s n="num"/></l><r>kettő<s n="num"/></r></p></e>
+    <e><p><l>kolme<s n="num"/></l><r>harom<s n="num"/></r></p></e>
+    <e><p><l>viisi<s n="num"/></l><r>öt<s n="num"/></r></p></e>
+    <e><p><l>kuusi<s n="num"/></l><r>hat<s n="num"/></r></p></e>
+
+    <!-- nouns -->
+
+    <e><p><l>eläin<s n="n"/></l><r>állat<s n="n"/></r></p></e>
+    <e><p><l>ihminen<s n="n"/></l><r>ember<s n="n"/></r></p></e>
+    <e><p><l>ikkuna<s n="n"/></l><r>ablak<s n="n"/></r></p></e>
+    <e><p><l>kissa<s n="n"/></l><r>macska<s n="n"/></r></p></e>
+    <e><p><l>koira<s n="n"/></l><r>kutya<s n="n"/></r></p></e>
+    <e><p><l>kysymys<s n="n"/></l><r>kérés<s n="n"/></r></p></e>
+    <e><p><l>käsi<s n="n"/></l><r>kéz<s n="n"/></r></p></e>
+    <e><p><l>lapsi<s n="n"/></l><r>gyerek<s n="n"/></r></p></e>
+    <e><p><l>laskeminen<s n="n"/></l><r>számoló<s n="n"/></r></p></e>
+    <e><p><l>leikkiminen<s n="n"/></l><r>játék<s n="n"/></r></p></e>
+    <e><p><l>leikki<s n="n"/></l><r>játék<s n="n"/></r></p></e>
+    <e><p><l>lintu<s n="n"/></l><r>madár<s n="n"/></r></p></e>
+    <e><p><l>piilo<s n="n"/></l><r>rejtekhely<s n="n"/></r></p></e>
+    <e><p><l>poika<s n="n"/></l><r>fiú<s n="n"/></r></p></e>
+    <e><p><l>puu<s n="n"/></l><r>fa<s n="n"/></r></p></e>
+    <e><p><l>puutarha<s n="n"/></l><r>kert<s n="n"/></r></p></e>
+    <e><p><l>pää<s n="n"/></l><r>fej<s n="n"/></r></p></e>
+    <e><p><l>pöytä<s n="n"/></l><r>asztal<s n="n"/></r></p></e>
+    <e><p><l>silmä<s n="n"/></l><r>szem<s n="n"/></r></p></e>
+    <e><p><l>sisko<s n="n"/></l><r>húg<s n="n"/></r></p></e>
+    <e><p><l>sää<s n="n"/></l><r>idő<s n="n"/></r></p></e>
+    <e><p><l>talo<s n="n"/></l><r>ház<s n="n"/></r></p></e>
+    <e><p><l>tuoli<s n="n"/></l><r>szék<s n="n"/></r></p></e>
+    <e><p><l>tyttö<s n="n"/></l><r>lány<s n="n"/></r></p></e>
+    <e><p><l>vastaus<s n="n"/></l><r>válasz<s n="n"/></r></p></e>
+    <e><p><l>vesi<s n="n"/></l><r>víz<s n="n"/></r></p></e>
+    <e><p><l>vuosi<s n="n"/></l><r>év<s n="n"/></r></p></e>
+    <e><p><l>äiti<s n="n"/></l><r>anya<s n="n"/></r></p></e>
+    <e><p><l>ääni<s n="n"/></l><r>hang<s n="n"/></r></p></e>
+
+    <!-- verbs -->
+    
+    <e><p><l>ajatella<s n="vblex"/></l><r>gondol<s n="vblex"/></r></p></e>
+    <e><p><l>ei<s n="vblex"/></l><r>nem<s n="adv"/></r></p></e>
+    <e><p><l>etsiä<s n="vblex"/></l><r>keres<s n="vblex"/></r></p></e>
+    <e><p><l>haluta<s n="vblex"/></l><r>akar<s n="vblex"/></r></p></e>
+    <e><p><l>istua<s n="vblex"/></l><r>ül<s n="vblex"/></r></p></e>
+    <e><p><l>juoda<s n="vblex"/></l><r>iszik<s n="vblex"/></r></p></e>
+    <e><p><l>juosta<s n="vblex"/></l><r>fut<s n="vblex"/></r></p></e>
+    <e><p><l>katsoa<s n="vblex"/></l><r>néz<s n="vblex"/></r></p></e>
+    <e><p><l>kertoa<s n="vblex"/></l><r>beszél<s n="vblex"/></r></p></e>
+    <e><p><l>kuulla<s n="vblex"/></l><r>hall<s n="vblex"/></r></p></e>
+    <e><p><l>kuulua<s n="vblex"/></l><r>hall<s n="vblex"/></r></p></e>
+    <e><p><l>kuunnella<s n="vblex"/></l><r>hallgat<s n="vblex"/></r></p></e>
+    <e><p><l>kysyä<s n="vblex"/></l><r>kérdez<s n="vblex"/></r></p></e>
+    <e><p><l>kävellä<s n="vblex"/></l><r>sétál<s n="vblex"/></r></p></e>
+    <e><p><l>laskea<s n="vblex"/></l><r>számol<s n="vblex"/></r></p></e>
+    <e><p><l>leikkiä<s n="vblex"/></l><r>játszik<s n="vblex"/></r></p></e>
+    <e><p><l>löytää<s n="vblex"/></l><r>talál<s n="vblex"/></r></p></e>
+    <e><p><l>mennä<s n="vblex"/></l><r>megy<s n="vblex"/></r></p></e>
+    <e><p><l>nauraa<s n="vblex"/></l><r>nevet<s n="vblex"/></r></p></e>
+    <e><p><l>nukkua<s n="vblex"/></l><r>alszik<s n="vblex"/></r></p></e>
+    <e><p><l>nähdä<s n="vblex"/></l><r>lát<s n="vblex"/></r></p></e>
+    <e><p><l>olla<s n="vblex"/></l><r>van<s n="vbser"/></r></p></e>
+    <e><p><l>osata<s n="vblex"/></l><r>tud<s n="vblex"/></r></p></e>
+    <e><p><l>pitää<s n="vblex"/></l><r>szeret<s n="vblex"/></r></p></e>
+    <e><p><l>puhua<s n="vblex"/></l><r>beszél<s n="vblex"/></r></p></e>
+    <e><p><l>pystyä<s n="vblex"/></l><r>tud<s n="vblex"/></r></p></e>
+    <e><p><l>saada<s n="vblex"/></l><r>kap<s n="vblex"/></r></p></e>
+    <e><p><l>sanoa<s n="vblex"/></l><r>mond<s n="vblex"/></r></p></e>
+    <e><p><l>syödä<s n="vblex"/></l><r>eszik<s n="vblex"/></r></p></e>
+    <e><p><l>tehdä<s n="vblex"/></l><r>csinál<s n="vblex"/></r></p></e>
+    <e><p><l>tietää<s n="vblex"/></l><r>tud<s n="vblex"/></r></p></e>
+    <e><p><l>tulla<s n="vblex"/></l><r>megy<s n="vblex"/></r></p></e>
+    <e><p><l>täytyä<s n="vblex"/></l><r>kell<s n="vblex"/></r></p></e>
+    <e><p><l>vastata<s n="vblex"/></l><r>válaszol<s n="vblex"/></r></p></e>
+    <e><p><l>voida<s n="vblex"/></l><r>tud<s n="vblex"/></r></p></e>
+
+    <!-- adjectives -->
+
+    <e><p><l>hauska<s n="adj"/></l><r>szórakostató<s n="adj"/></r></p></e>
+    <e><p><l>hyvä<s n="adj"/></l><r>jó<s n="adj"/></r></p></e>
+    <e><p><l>iloinen<s n="adj"/></l><r>boldog<s n="adj"/></r></p></e>
+    <e><p><l>iso<s n="adj"/></l><r>nagy<s n="adj"/></r></p></e>
+    <e><p><l>kylmä<s n="adj"/></l><r>hideg<s n="adj"/></r></p></e>
+    <e><p><l>lämmin<s n="adj"/></l><r>meleg<s n="adj"/></r></p></e>
+    <e><p><l>pieni<s n="adj"/></l><r>kicsi<s n="adj"/></r></p></e>
+    <e><p><l>vanha<s n="adj"/></l><r>régi<s n="adj"/></r></p></e>
+
+
+    <!-- adpositions -->
+
+    <e><p><l>alle<s n="post"/></l><r>alatt<s n="post"/></r></p></e>
+    <e><p><l>edessä<s n="post"/></l><r>elött<s n="post"/></r></p></e>
+    <e><p><l>ulos<s n="post"/></l><r>ki<s n="adv"/></r></p></e>
+    
+    <!-- conjunctions -->
+
+    <e><p><l>että<s n="cnjadv"/></l><r>hogy<s n="cnjadv"/></r></p></e>
+    <e><p><l>ja<s n="cnjcoo"/></l><r>és<s n="cnjcoo"/></r></p></e>
+    <e><p><l>mutta<s n="cnjcoo"/></l><r>de<s n="cnjcoo"/></r></p></e>
+    <e><p><l>tai<s n="cnjcoo"/></l><r>vagy<s n="cnjcoo"/></r></p></e>
+    
+    <!-- adverbs -->
+    
+    <e><p><l>aina<s n="adv"/></l><r>mindig<s n="adv"/></r></p></e>
+    <e><p><l>eilen<s n="adv"/></l><r>tegnap<s n="adv"/></r></p></e>
+    <e><p><l>erittäin<s n="adv"/></l><r>nagyon<s n="adv"/></r></p></e>
+    <e><p><l>hitaasti<s n="adv"/></l><r>lassú<s n="adv"/></r></p></e>
+    <e><p><l>hyvin<s n="adv"/></l><r>jól<s n="adv"/></r></p></e>
+    <e><p><l>kahden<s n="adv"/></l><r>együtt<s n="adv"/></r></p></e>
+    <e><p><l>kaikkialle<s n="adv"/></l><r>mindenütt<s n="adv"/></r></p></e>
+    <e><p><l>koskaan<s n="adv"/></l><r>soha<s n="adv"/></r></p></e>
+    <e><p><l>minne<s n="adv"/></l><r>mibe<s n="adv"/></r></p></e>
+    <e><p><l>missä<s n="adv"/></l><r>hol<s n="adv"/></r></p></e>
+    <e><p><l>missä<s n="adv"/></l><r>miben<s n="adv"/></r></p></e>
+    <e><p><l>mitä<s n="adv"/></l><r>mit<s n="adv"/></r></p></e>
+    <e><p><l>myös<s n="adv"/></l><r>szintén<s n="adv"/></r></p></e>
+    <e><p><l>niin<s n="adv"/></l><r>így<s n="adv"/></r></p></e>
+    <e><p><l>nopeasti<s n="adv"/></l><r>gyorsan<s n="adv"/></r></p></e>
+    <e><p><l>nyt<s n="adv"/></l><r>most<s n="adv"/></r></p></e>
+    <e><p><l>siellä<s n="adv"/></l><r>ott<s n="adv"/></r></p></e>
+    <e><p><l>silloin<s n="adv"/></l><r>akkor<s n="adv"/></r></p></e>
+    <e><p><l>sisällä<s n="adv"/></l><r>bent<s n="adv"/></r></p></e>
+    <e><p><l>sitten<s n="adv"/></l><r>akkor<s n="adv"/></r></p></e>
+    <e><p><l>taas<s n="adv"/></l><r>megint<s n="adv"/></r></p></e>
+    <e><p><l>tietenkään<s n="adv"/></l><r>persze<s n="adv"/></r></p></e>
+    <e><p><l>todennäköisesti<s n="adv"/></l><r>persze<s n="adv"/></r></p></e>
+    <e><p><l>tänään<s n="adv"/></l><r>ma<s n="adv"/></r></p></e>
+    <e><p><l>ulkona<s n="adv"/></l><r>kint<s n="post"/></r></p></e>
+    <e><p><l>vähän<s n="adv"/></l><r>kicsit<s n="adv"/></r></p></e>
+    <e><p><l>yhdessä<s n="adv"/></l><r>együtt<s n="adv"/></r></p></e>
+
+    <!-- interjections -->
+
+    <!-- pronouns -->
+
+    <e><p><l>he<s n="prn"/></l><r>ők<s n="prn"/></r></p></e>
+    <e><p><l>hän<s n="prn"/></l><r>ő<s n="prn"/></r></p></e>
+    <e><p><l>jokin<s n="prn"/></l><r>valami<s n="prn"/></r></p></e>
+    <e><p><l>miksi<s n="prn"/></l><r>miért<s n="prn"/></r></p></e>
+    <e><p><l>mikään<s n="prn"/></l><r>semmi<s n="prn"/></r></p></e>
+    <e><p><l>minä<s n="prn"/></l><r>én<s n="prn"/></r></p></e>
+    <e><p><l>molemmat<s n="prn"/></l><r>mindkét<s n="prn"/></r></p></e>
+    <e><p><l>muu<s n="prn"/></l><r>más<s n="prn"/></r></p></e>
+    <e><p><l>ne<s n="prn"/></l><r>ezek<s n="prn"/></r></p></e>
+    <e><p><l>nämä<s n="prn"/></l><r>azok<s n="prn"/></r></p></e>
+    <e><p><l>se<s n="prn"/></l><r>az<s n="prn"/></r></p></e>
+    <e><p><l>sinä<s n="prn"/></l><r>ti<s n="prn"/></r></p></e>
+    
+    <!-- puncts -->
+    
+    <e><p><l>,<s n="cm"/></l><r>,<s n="cm"/></r></p></e>
+    <e><p><l>(<s n="lpar"/></l><r>(<s n="lpar"/></r></p></e>
+    <e><p><l>)<s n="rpar"/></l><r>)<s n="rpar"/></r></p></e>
+    <e><p><l>[<s n="lpar"/></l><r>[<s n="lpar"/></r></p></e>
+    <e><p><l>]<s n="rpar"/></l><r>]<s n="rpar"/></r></p></e>
+    <e><p><l>«<s n="lquot"/></l><r>«<s n="lquot"/></r></p></e>
+    <e><p><l>»<s n="rquot"/></l><r>»<s n="rquot"/></r></p></e>
+    <e><p><l>“<s n="lquot"/></l><r>“<s n="lquot"/></r></p></e>
+    <e><p><l>"<s n="lquot"/></l><r>"<s n="lquot"/></r></p></e>
+    <e><p><l>"<s n="rquot"/></l><r>"<s n="rquot"/></r></p></e>
+    <e><p><l>”<s n="rquot"/></l><r>”<s n="rquot"/></r></p></e>
+    <e><p><l>-<s n="guio"/></l><r>-<s n="guio"/></r></p></e>
+    <e><p><l>—<s n="guio"/></l><r>—<s n="guio"/></r></p></e>
+    <e><p><l>–<s n="guio"/></l><r>-<s n="guio"/></r></p></e>
+    <e><p><l>'<s n="apos"/></l><r>'<s n="apos"/></r></p></e>
+    
+    <e><re>[.\?;:!"]+</re>
+        <p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
+    <e><re>[№%]?[0-9]+([.,][0-9]+)*[.,]*</re>
+        <p><l><s n="num"/></l><r><s n="num"/></r></p></e> 
+
+
+  </section>
+</dictionary>
+<!-- vim: set ft=xml: -->

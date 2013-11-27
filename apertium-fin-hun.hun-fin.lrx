@@ -1,0 +1,5 @@
+<rules>
+  <rule>
+    <match lemma="idő" tags="n.*"><select lemma="sää" tags="n.*"/></match>
+  </rule>
+</rules>

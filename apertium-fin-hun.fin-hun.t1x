@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- -*- nxml -*- -->
+<transfer default="chunk">
+  <section-def-cats>
+
+    <def-cat n="neg-verb"> <!-- ei vblex.neg.p3.sg -->
+      <cat-item lemma="ei" tags="vblex.neg.*"/>
+      <cat-item lemma="ei" tags="vblex.neg.actv.p3.sg.@\+FAUXV"/>
+    </def-cat>
+
+    <def-cat n="adv">
+        <cat-item tags="adv"/>
+    </def-cat>
+    <def-cat n="cnjcoo">
+        <cat-item tags="cnjcoo"/>
+        <cat-item tags="cnjcoo.*"/>
+    </def-cat>
+    <def-cat n="necessive">
+        <cat-item lemma="täytyä" tags="vaux.*"/>
+    </def-cat>
+    <def-cat n="gen-subj">
+        <cat-item tags="*.*.gen"/>
+        <cat-item tags="*.*.*.*.*.gen"/>
+    </def-cat>
+    <def-cat n="adv-misc">
+        <cat-item tags="adv.*"/>
+    </def-cat>
+    <def-cat n="pron-misc">
+        <cat-item tags="prn.*"/>
+    </def-cat>
+    <def-cat n="pron-pers">
+        <cat-item tags="prn.pers.*"/>
+    </def-cat>
+    <def-cat n="habitive">
+        <cat-item tags="n.*.ade"/>
+    </def-cat>
+    <def-cat n="possessional">
+        <cat-item lemma="olla" tags="vblex.actv.*.p3.sg"/>
+    </def-cat>
+    <def-cat n="vbneg">
+        <cat-item tags="vblex.neg.*.*.*"/>
+    </def-cat>
+    <def-cat n="post">
+      <cat-item tags="post"/>
+    </def-cat>
+    <def-cat n="num">
+      <cat-item tags="num.*"/>
+    </def-cat>
+    <def-cat n="adj">
+      <cat-item tags="adj.*"/>
+    </def-cat>
+    <def-cat n="verb-mood">
+      <cat-item tags="vblex.*.cond.*"/>
+      <cat-item tags="vblex.*.imp.*"/>
+      <cat-item tags="vblex.*.pot.*"/>
+      <cat-item tags="vaux.*.cond.*"/>
+      <cat-item tags="vaux.*.imp.*"/>
+      <cat-item tags="vaux.*.pot.*"/>
+    </def-cat>
+    <def-cat n="cm">
+      <cat-item tags="cm"/>
+    </def-cat>
+    <def-cat n="nom">
+      <cat-item tags="n.*"/>
+      <cat-item tags="n.*.*"/>
+      <cat-item tags="n.*.*.*"/>
+      <cat-item tags="np.*"/>
+      <cat-item tags="np.*.*"/>
+      <cat-item tags="np.*.*.*"/>
+    </def-cat>
+    <def-cat n="sent">
+      <cat-item tags="sent"/>
+    </def-cat>
+
+    <def-cat n="verb-past">
+        <cat-item tags="vblex.*.past.*"/>
+    </def-cat>
+    <def-cat n="verb-pres">
+        <cat-item tags="vblex.*.pres.*"/>
+    </def-cat>
+    <def-cat n="vbolla">
+        <cat-item lemma="olla" tags="vblex.*"/>
+    </def-cat>
+  </section-def-cats>
+  <section-def-attrs>
+    <def-attr n="a_verb">
+      <attr-item tags="vblex"/>
+      <attr-item tags="vblex.actv"/>
+      <attr-item tags="vblex.pasv"/>
+      <attr-item tags="vaux"/>
+      <attr-item tags="vaux.actv"/>
+      <attr-item tags="vaux.pasv"/>
+    </def-attr>
+    <def-attr n="person">
+      <attr-item tags="p1"/>
+      <attr-item tags="p2"/>
+      <attr-item tags="p3"/>
+    </def-attr>
+    <def-attr n="moodtense">
+      <attr-item tags="past"/>
+      <attr-item tags="pres"/>
+      <attr-item tags="cond"/>
+      <attr-item tags="imp"/>
+      <attr-item tags="pot"/>
+    </def-attr>
+    <def-attr n="a_adv">
+        <attr-item tags="adv"/>
+        <attr-item tags="adv.itg"/>
+    </def-attr>
+    <def-attr n="a_nom">
+      <attr-item tags="n"/>
+      <attr-item tags="vblex.subst"/>
+      <attr-item tags="np"/>
+      <attr-item tags="np.ant"/>
+      <attr-item tags="np.ant.f"/>
+      <attr-item tags="np.ant.m"/>
+    </def-attr>
+    <def-attr n="a_adj">
+      <attr-item tags="adj"/>
+      <attr-item tags="adj.sint"/>
+    </def-attr>
+    <def-attr n="a_prn">
+      <attr-item tags="prn.pers"/>
+    </def-attr>
+    <def-attr n="a_num">
+      <attr-item tags="num"/>
+    </def-attr>
+    <def-attr n="a_nbr">
+      <attr-item tags="sg"/>
+      <attr-item tags="pl"/>
+    </def-attr>
+    <def-attr n="a_pers">
+      <attr-item tags="p1"/>
+      <attr-item tags="p2"/>
+      <attr-item tags="p3"/>
+    </def-attr>
+    <def-attr n="a_gen">
+      <attr-item tags="m"/>
+      <attr-item tags="nt"/>
+      <attr-item tags="f"/>
+    </def-attr>
+    <def-attr n="a_cas">
+      <attr-item tags="abl"/>
+      <attr-item tags="acc"/>
+      <attr-item tags="ade"/>
+      <attr-item tags="ela"/>
+      <attr-item tags="gen"/>
+      <attr-item tags="all"/>
+      <attr-item tags="ill"/>
+      <attr-item tags="ine"/>
+      <attr-item tags="ins"/>
+      <attr-item tags="nom"/>
+      <attr-item tags="abe"/>
+      <attr-item tags="com"/>
+      <attr-item tags="ess"/>
+      <attr-item tags="par"/>
+    </def-attr>
+    <def-attr n="a_poss">
+        <attr-item tags="px1sg"/>
+        <attr-item tags="px2sg"/>
+        <attr-item tags="px3sg"/>
+        <attr-item tags="px1pl"/>
+        <attr-item tags="px2pl"/>
+        <attr-item tags="px3pl"/>
+        <attr-item tags="px3sp"/>
+    </def-attr>
+
+    <def-attr n="synfunc">
+      <attr-item tags="CLB"/>
+      <attr-item tags="@\+FAUXV"/>
+      <attr-item tags="@\+FMAINV"/>
+      <attr-item tags="@-FADVL"/>
+      <attr-item tags="@-FAUXV"/>
+      <attr-item tags="@-FMAINV"/>
+      <attr-item tags="@-FOBJ→"/>
+      <attr-item tags="@-FSUBJ→"/>
+      <attr-item tags="@-F←OBJ"/>
+      <attr-item tags="@ADVL"/>
+      <attr-item tags="@ADVL←"/>
+      <attr-item tags="@ADVL→"/>
+      <attr-item tags="@COMP-CS←"/>
+      <attr-item tags="@HAB"/>
+      <attr-item tags="@CNP"/>
+      <attr-item tags="@CVP"/>
+      <attr-item tags="@HNOUN"/>
+      <attr-item tags="@INTERJ"/>
+      <attr-item tags="@NEC-S"/>
+      <attr-item tags="@NF-S"/>
+      <attr-item tags="@Num←"/>
+      <attr-item tags="@N←"/>
+      <attr-item tags="@OBJ"/>
+      <attr-item tags="@OBJ"/>
+      <attr-item tags="@OBJ→"/>
+      <attr-item tags="@OPRED"/>
+      <attr-item tags="@OPRED→"/>
+      <attr-item tags="@PC"/>
+      <attr-item tags="@PCLE"/>
+      <attr-item tags="@Pron←"/>
+      <attr-item tags="@P←"/>
+      <attr-item tags="@P→"/>
+      <attr-item tags="@SPRED"/>
+      <attr-item tags="@SPRED←OBJ"/>
+      <attr-item tags="@SPRED→"/>
+      <attr-item tags="@SUBJ"/>
+      <attr-item tags="@SUBJ"/>
+      <attr-item tags="@SUBJ→"/>
+      <attr-item tags="@←ADVL"/>
+      <attr-item tags="@←OBJ"/>
+      <attr-item tags="@←OPRED"/>
+      <attr-item tags="@←P"/>
+      <attr-item tags="@←SPRED"/>
+      <attr-item tags="@←SUBJ"/>
+      <attr-item tags="@→A"/>
+      <attr-item tags="@→ADVL"/>
+      <attr-item tags="@→N"/>
+      <attr-item tags="@→Num"/>
+      <attr-item tags="@→P"/>
+      <attr-item tags="@→Pron"/>
+    </def-attr>
+
+
+  </section-def-attrs>
+  <section-def-vars>
+    <def-var n="number"/>
+    <def-var n="sntype"/>
+    <def-var n="current_verb"/>
+  </section-def-vars>
+  <section-def-macros>
+ 
+    <def-macro n="proc-synlabel1" npar="1">
+          <let><clip pos="1" side="tl" part="synfunc"/><lit v=""/></let>
+    </def-macro>
+
+    <def-macro n="mood-handler1" npar="1">
+          <let><clip pos="1" side="tl" part="synfunc"/><lit v=""/></let>
+          <choose>
+            <when>
+              <test><or> 
+                <equal><clip pos="1" side="sl" part="moodtense"/><lit-tag v="cond"/></equal>
+                <equal><clip pos="1" side="sl" part="moodtense"/><lit-tag v="imp"/></equal>
+                <equal><clip pos="1" side="sl" part="moodtense"/><lit-tag v="pot"/></equal>
+        </or></test>
+
+              <let><clip pos="1" side="tl" part="moodtense"/><lit-tag v="pres"/></let>
+            </when>
+        </choose>
+    </def-macro>
+
+
+  </section-def-macros>
+  <section-rules>
+
+
+
+ 
+    <rule comment="REGLA: SENT">
+      <pattern>
+        <pattern-item n="sent"/>
+      </pattern>
+      <action>
+        <call-macro n="proc-synlabel1"> 
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="sent" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SENT"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+  </section-rules>
+</transfer>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- -*- nxml -*- -->
+<interchunk>
+
+  <section-def-cats>
+    <def-cat n="SV">
+      <cat-item tags="SV"/>
+    </def-cat>
+    <def-cat n="SENT">
+      <cat-item tags="SENT"/>
+    </def-cat>
+  </section-def-cats>
+  <section-def-attrs>
+    <def-attr n="a_nbr">
+      <attr-item tags="sg"/>
+      <attr-item tags="pl"/>
+      <attr-item tags="sp"/>
+      <attr-item tags="ND"/>
+    </def-attr>
+    <def-attr n="a_cas">
+      <attr-item tags="nom"/>
+      <attr-item tags="acc"/>
+      <attr-item tags="ine"/>
+      <attr-item tags="ela"/>
+      <attr-item tags="ill"/>
+      <attr-item tags="ade"/>
+      <attr-item tags="abl"/>
+      <attr-item tags="all"/>
+      <attr-item tags="abe"/>
+      <attr-item tags="ins"/>
+      <attr-item tags="com"/>
+    </def-attr>
+    <def-attr n="a_poss">
+      <attr-item tags="px1sg"/>
+      <attr-item tags="px2sg"/>
+      <attr-item tags="px3sg"/>
+      <attr-item tags="px1pl"/>
+      <attr-item tags="px2pl"/>
+      <attr-item tags="px3pl"/>
+      <attr-item tags="px3ps"/>
+    </def-attr>
+    <def-attr n="a_prs">
+      <attr-item tags="p1.sg"/>
+      <attr-item tags="p2.sg"/>
+      <attr-item tags="p3.sg"/>
+      <attr-item tags="p1.pl"/>
+      <attr-item tags="p2.pl"/>
+      <attr-item tags="p3.pl"/>
+    </def-attr>
+    <def-attr n="a_mood">
+      <attr-item tags="cond"/>
+      <attr-item tags="pot"/>
+      <attr-item tags="imp"/>
+    </def-attr>
+  </section-def-attrs>
+  <section-def-vars>
+    <def-var n="number"/>
+    <def-var n="PREP"/>
+    <def-var n="POSS"/>
+    <def-var n="PRS"/>
+    <def-var n="NOT"/>
+    <def-var n="AUX"/>
+  </section-def-vars>
+  
+  <section-def-macros>
+    <def-macro n="insert-aux1" npar="1">
+      <let>
+        <var n="AUX"/>
+        <lit v=""/>
+      </let>
+      <choose>
+        <when>
+          <test><equal><clip pos="1" part="a_mood"/><lit-tag v="cond"/></equal></test>
+          <let><var n="AUX"/>
+               <concat><lit v="^mood"/><lit-tag v="MOOD"/><lit v="{^would"/><lit-tag v="vaux.actv.pres"/><lit v="$}$ "/></concat>
+          </let>
+        </when>
+        <when>
+          <test><equal><clip pos="1" part="a_mood"/><lit-tag v="imp"/></equal></test>
+          <let><var n="AUX"/>
+               <concat><lit v="^mood"/><lit-tag v="MOOD"/><lit v="{^should"/><lit-tag v="vaux.actv.pres"/><lit v="$}$ "/></concat>
+          </let>
+        </when>
+      </choose>
+    </def-macro>
+  </section-def-macros>
+  <section-rules>
+
+    
+    <rule comment="REGLA: SV">
+      <pattern>
+        <pattern-item n="SV"/>
+      </pattern>
+      <action>
+        <call-macro n="insert-aux1">
+          <with-param pos="1"/>
+        </call-macro> 
+        <out>
+          <var n="AUX"/>
+          <chunk>
+            <clip pos="1" part="lem"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+  </section-rules>
+</interchunk>

@@ -1,0 +1,22 @@
+* text=auto !eol
+/AUTHORS -text
+/COPYING -text
+/ChangeLog -text
+/INSTALL -text
+/Makefile.am -text
+/NEWS -text
+/README -text
+/apertium-fin-hun.fin-hun.dix -text
+/apertium-fin-hun.fin-hun.lrx -text
+/apertium-fin-hun.fin-hun.t1x -text svneol=unset#application/xml
+/apertium-fin-hun.fin-hun.t2x -text svneol=unset#application/xml
+/apertium-fin-hun.fin-hun.t3x -text svneol=unset#application/xml
+/apertium-fin-hun.hun-fin.lrx -text
+/apertium-fin-hun.hun-fin.t1x -text svneol=unset#application/xml
+/apertium-fin-hun.hun-fin.t2x -text svneol=unset#application/xml
+/apertium-fin-hun.hun-fin.t3x -text svneol=unset#application/xml
+/configure.ac -text
+dev/debug2dix.bash -text
+/modes.xml -text svneol=unset#application/xml
+texts/rasskaz.hun.txt -text
+texts/story.fin.txt -text

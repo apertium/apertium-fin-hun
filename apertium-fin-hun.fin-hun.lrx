@@ -1,0 +1,75 @@
+<rules>
+  <rule>
+    <match lemma="kuulua" tags="vblex.*"><select lemma="hear" tags="vblex.*"/></match>
+    <match lemma="ääni" tags="n.*"><select lemma="sound" tags="n.*"/></match>
+  </rule>
+  <rule>
+    <match lemma="kuulua" tags="vblex.*"><select lemma="hear" tags="vblex.*"/></match>
+    <or>
+      <match tags="n.*.par"/>
+      <match tags="n.*.nom"/>
+      <match tags="n.*.gen"/>
+    </or>
+  </rule>
+  <rule>
+    <match lemma="kuulua" tags="vblex.*"><select lemma="belong" tags="vblex.*"/></match>
+    <match tags="n.*.ill"/>
+  </rule>
+  <rule>
+    <match lemma="pitää" tags="vblex.*"><select lemma="hold" tags="vblex.*"/></match>
+  </rule>
+  <rule>
+    <match lemma="pitää" tags="vblex.*">
+      <select lemma="love" tags="vblex.*"/>
+    </match>
+    <match/>
+    <match tags="*.*.ela"/>
+  </rule>
+  <rule>
+    <match lemma="ääni" tags="n.*.ins"><select lemma="vote" tags="n.*"/></match>
+  </rule>
+  <rule>
+    <match lemma="ääni" tags="n.*"><select lemma="sound" tags="n.*"/></match>
+  </rule>
+<!--
+  <rule>
+    <match lemma="ääni" tags="n.*"><select lemma="voice" tags="n.*"/></match>
+  </rule>
+-->
+  <rule>
+    <match lemma="myös" tags="adv"><select lemma="also" tags="adv"/></match>
+  </rule>
+  <rule>
+    <match lemma="nopeasti" tags="adv"><select lemma="quickly" tags="adv"/></match>
+  </rule>
+  <rule>
+    <match lemma="todennäköisesti" tags="adv"><select lemma="probably" tags="adv"/></match>
+  </rule>
+  <rule>
+    <match lemma="taivas" tags="n.*"><select lemma="sky" tags="n.*"/></match>
+  </rule>
+  <rule>
+      <match lemma="nähdä" tags="vblex.*"><select lemma="see" tags="vblex.*"/></match>
+  </rule>
+  <rule>
+    <match lemma="vähän" tags="adj.*"><select lemma="some" tags="adj.*"/></match>
+    <match lemma="vesi" tags="n.*"/>
+  </rule>
+  <rule>
+    <match lemma="laskea" tags="vblex.*"><select lemma="count" tags="vblex.*"/></match>
+  </rule>
+  <rule>
+    <match lemma="laskea" tags="vblex.*">
+      <select lemma="slide" tags="vblex.*"/>
+    </match>
+    <match lemma="mäki" tags="n.*"/>
+  </rule>
+  <rule>
+    <match lemma="laskea" tags="vblex.*">
+      <select lemma="decrease" tags="vblex.*"/>
+    </match>
+    <match/>
+    <match tags="*.*.ill"/>
+  </rule>
+
+</rules>
