@@ -16,17 +16,17 @@ TARGETS_TRANSFER=$(PREFIX1).t1x.bin $(PREFIX2).t1x.bin \
 				 $(PREFIX1).t2x.bin $(PREFIX1).t3x.bin \
 				 $(PREFIX2).t2x.bin $(PREFIX2).t3x.bin \
 				 $(PREFIX1).autolex.bin $(PREFIX2).autolex.bin \
-				 $(PREFIX1).autobil.bin $(PREFIX2).autobil.bin \
-				 $(PREFIX1).mode $(PREFIX2).mode modes 
+				 $(PREFIX1).autobil.bin $(PREFIX2).autobil.bin
+
 TARGETS_COMMON=$(TARGETS_MONOLING) $(TARGETS_TRANSFER)
 
-# Use this goal for creating .deps, otherwise make -j2 will give problems:
-.deps/.d:
-	if [ ! -d .deps ]; then mkdir .deps; fi
-	touch $@
 
-# Prevent the .d file from being removed automatically:
-.PRECIOUS: .deps/.d
+# This include defines goals for install-modes, .deps/.d and .mode files:
+@ap_include@
+
+###############################################################################
+## Transducers, disambiguation rules, transfer
+###############################################################################
 
 # currently we copy stuff from another dir
 $(PREFIX1).automorf.hfst: $(AP_LIB1)/$(LANG1).automorf.hfst
@@ -128,24 +128,15 @@ $(PREFIX2).t3x.bin: $(BASENAME).$(PREFIX2).t3x
 #	lt-comp lr $< $@
 
 ###############################################################################
-## Translation modes
-###############################################################################
-
-modes/$(PREFIX1).mode: modes.xml
-	apertium-validate-modes modes.xml
-	apertium-gen-modes modes.xml
-	cp *.mode modes/
-
-modes/$(PREFIX2).mode: modes.xml
-	apertium-validate-modes modes.xml
-	apertium-gen-modes modes.xml
-	cp *.mode modes/
-
-###############################################################################
 ## Installation stuff
 ###############################################################################
 
 debug: .deps/$(LANG1).LR-debug.hfst .deps/$(LANG2).LR-debug.hfst
+
+
+###############################################################################
+## Distribution
+###############################################################################
 
 EXTRA_DIST=$(BASENAME).$(PREFIX1).t1x $(BASENAME).$(PREFIX1).t2x\
 		   $(BASENAME).$(PREFIX1).t3x \
@@ -153,39 +144,32 @@ EXTRA_DIST=$(BASENAME).$(PREFIX1).t1x $(BASENAME).$(PREFIX1).t2x\
 		   $(BASENAME).$(PREFIX2).t3x \
            modes.xml
 
-apertium_fin_hunmodesdir=$(prefix)/share/apertium/modes/
+###############################################################################
+## Installation
+###############################################################################
+
 apertium_fin_hundir=$(prefix)/share/apertium/$(BASENAME)/
 
-apertium_fin_hun_DATA=$(PREFIX1).autobil.bin $(PREFIX2).autobil.bin \
-		    $(PREFIX1).t1x.bin $(PREFIX2).t1x.bin \
-		    $(PREFIX1).t2x.bin $(PREFIX2).t2x.bin \
-		    $(PREFIX1).t3x.bin $(PREFIX2).t3x.bin \
-		    $(PREFIX1).rlx.bin $(PREFIX2).rlx.bin \
-		    $(PREFIX1).autolex.bin $(PREFIX2).autolex.bin \
-		    $(PREFIX1).automorf.hfst $(PREFIX2).automorf.bin \
-		    $(PREFIX1).autogen.bin $(PREFIX2).autogen.hfst \
-		    $(BASENAME).$(PREFIX1).t1x $(BASENAME).$(PREFIX2).t1x \
+apertium_fin_hun_DATA=$(TARGETS_COMMON) \
+	$(BASENAME).$(PREFIX1).t1x \
+	$(BASENAME).$(PREFIX2).t1x \
+	$(BASENAME).$(PREFIX1).t2x \
+	$(BASENAME).$(PREFIX2).t2x \
+	$(BASENAME).$(PREFIX1).t3x \
+	$(BASENAME).$(PREFIX2).t3x \
 		    modes.xml
 
 #		    $(PREFIX1).autopgen.bin $(PREFIX2).autopgen.bin 
 
-noinst_DATA=modes/$(PREFIX1).mode modes/$(PREFIX2).mode
+# All modes are created by the same goal, listing several will just give problems with make -j2
+noinst_DATA=modes/$(PREFIX1).mode
 
+install-data-local: install-modes
 
-install-data-local:
-	mv modes modes~
-	$(prefix)/bin/apertium-gen-modes modes.xml $(BASENAME)
-	rm -rf modes
-	mv modes~ modes
-	test -d $(DESTDIR)$(apertium_fin_hunmodesdir) || mkdir $(DESTDIR)$(apertium_fin_hunmodesdir)
-	$(INSTALL_DATA) $(PREFIX1).mode $(DESTDIR)$(apertium_fin_hunmodesdir)
-	rm $(PREFIX1).mode
-	rm $(PREFIX2).mode
-	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t1x $(DESTDIR)$(apertium_fin_hundir)
-	$(INSTALL_DATA) $(BASENAME).$(PREFIX2).t1x $(DESTDIR)$(apertium_fin_hundir)
-	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t2x $(DESTDIR)$(apertium_fin_hundir)
-	$(INSTALL_DATA) $(BASENAME).$(PREFIX2).t2x $(DESTDIR)$(apertium_fin_hundir)
-	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t3x $(DESTDIR)$(apertium_fin_hundir)
-	$(INSTALL_DATA) $(BASENAME).$(PREFIX2).t3x $(DESTDIR)$(apertium_fin_hundir)
+###############################################################################
+## Cleanup
+###############################################################################
 
-CLEANFILES = -r $(TARGETS_COMMON) .deps/
+CLEANFILES = $(TARGETS_COMMON)
+clean-local: 
+	-rm -rf .deps modes

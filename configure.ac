@@ -5,7 +5,7 @@ AM_INIT_AUTOMAKE
 AC_PROG_LN_S
 AC_PROG_AWK
 
-m4_define([required_apertium_version], [3.2.0])
+m4_define([required_apertium_version], [3.3.0])
 PKG_CHECK_MODULES(APERTIUM,   apertium >= required_apertium_version, [], [PKG_CHECK_MODULES(APERTIUM,   apertium-3.2 >= required_apertium_version)])
 # PKG_CHECK_MODULES(APERTIUM_FIN, apertium-fin)
 # PKG_CHECK_MODULES(APERTIUM_HUN, apertium-hun)
@@ -33,6 +33,8 @@ m4_ifdef([AP_CHECK_LING],[],[AC_MSG_ERROR([AP_CHECK_LING not defined, is apertiu
 AP_CHECK_LING([1], [apertium-fin])
 AP_CHECK_LING([2], [apertium-hun])
 
+
+AP_MKINCLUDE
 
 AC_OUTPUT([Makefile])
 
