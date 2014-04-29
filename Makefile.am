@@ -11,7 +11,7 @@ PREFIX2=$(LANG2)-$(LANG1)
 BASENAME=apertium-$(PREFIX1)
 
 TARGETS_MONOLING=$(PREFIX1).automorf.hfst $(PREFIX1).autogen.bin\
-				 $(PREFIX2).automorf.bin $(PREFIX2).autogen.hfst 
+				 $(PREFIX2).automorf.bin $(PREFIX2).autogen.hfst $(PREFIX1).rlx.bin $(PREFIX2).rlx.bin
 TARGETS_TRANSFER=$(PREFIX1).t1x.bin $(PREFIX2).t1x.bin \
 				 $(PREFIX1).t2x.bin $(PREFIX1).t3x.bin \
 				 $(PREFIX2).t2x.bin $(PREFIX2).t3x.bin \

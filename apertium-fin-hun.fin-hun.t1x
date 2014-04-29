@@ -2,6 +2,9 @@
 <!-- -*- nxml -*- -->
 <transfer default="chunk">
   <section-def-cats>
+    <def-cat n="default">
+        <cat-item lemma="*" tags="*"/>
+    </def-cat>
 
     <def-cat n="neg-verb"> <!-- ei vblex.neg.p3.sg -->
       <cat-item lemma="ei" tags="vblex.neg.*"/>
@@ -216,6 +219,7 @@
       <attr-item tags="@→Num"/>
       <attr-item tags="@→P"/>
       <attr-item tags="@→Pron"/>
+      <attr-item tags="@X"/>
     </def-attr>
 
 
@@ -274,6 +278,27 @@
       </action>
     </rule>
 
+
+    <rule comment="REGLA: default">
+      <pattern>
+        <pattern-item n="default"/>
+      </pattern>
+      <action>
+        <call-macro n="proc-synlabel1"> 
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="x" case="caseFirstWord">
+            <tags>
+              <tag><clip pos="1" side="tl" part="a_synfunc"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
   </section-rules>
 </transfer>
