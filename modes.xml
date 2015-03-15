@@ -231,15 +231,15 @@
         <file name="hun-fin.autolex.bin"/>
       </program>
       <program name="apertium-transfer -b">
-        <file name="apertium-hun-fin.hun-fin.t1x"/>
+        <file name="apertium-fin-hun.hun-fin.t1x"/>
         <file name="hun-fin.t1x.bin"/>
       </program>
       <program name="apertium-interchunk">
-        <file name="apertium-hun-fin.hun-fin.t2x"/>
+        <file name="apertium-fin-hun.hun-fin.t2x"/>
         <file name="hun-fin.t2x.bin"/>
       </program>
       <program name="apertium-postchunk">
-        <file name="apertium-hun-fin.hun-fin.t3x"/>
+        <file name="apertium-fin-hun.hun-fin.t3x"/>
         <file name="hun-fin.t3x.bin"/>
       </program>
       <program name="hfst-proc -g">
@@ -264,15 +264,15 @@
         <file name="hun-fin.autolex.bin"/>
       </program>
       <program name="apertium-transfer -b">
-        <file name="apertium-hun-fin.hun-fin.t1x"/>
+        <file name="apertium-fin-hun.hun-fin.t1x"/>
         <file name="hun-fin.t1x.bin"/>
       </program>
       <program name="apertium-interchunk">
-        <file name="apertium-hun-fin.hun-fin.t2x"/>
+        <file name="apertium-fin-hun.hun-fin.t2x"/>
         <file name="hun-fin.t2x.bin"/>
       </program>
       <program name="apertium-postchunk">
-        <file name="apertium-hun-fin.hun-fin.t3x"/>
+        <file name="apertium-fin-hun.hun-fin.t3x"/>
         <file name="hun-fin.t3x.bin"/>
       </program>
     </pipeline>
@@ -294,11 +294,11 @@
         <file name="hun-fin.autolex.bin"/>
       </program>
       <program name="apertium-transfer -b">
-        <file name="apertium-hun-fin.hun-fin.t1x"/>
+        <file name="apertium-fin-hun.hun-fin.t1x"/>
         <file name="hun-fin.t1x.bin"/>
       </program>
       <program name="apertium-interchunk">
-        <file name="apertium-hun-fin.hun-fin.t2x"/>
+        <file name="apertium-fin-hun.hun-fin.t2x"/>
         <file name="hun-fin.t2x.bin"/>
       </program>
     </pipeline>
@@ -320,7 +320,7 @@
         <file name="hun-fin.autolex.bin"/>
       </program>
       <program name="apertium-transfer -b">
-        <file name="apertium-hun-fin.hun-fin.t1x"/>
+        <file name="apertium-fin-hun.hun-fin.t1x"/>
         <file name="hun-fin.t1x.bin"/>
       </program>
     </pipeline>
