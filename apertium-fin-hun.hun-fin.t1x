@@ -14,6 +14,12 @@
     <def-cat n="post">
       <cat-item tags="post.*"/>
     </def-cat>
+    <def-cat n="verb">
+      <cat-item tags="vblex.*"/>
+      <cat-item tags="vbser.*"/>
+      <cat-item tags="vaux.*"/>
+      <cat-item tags="vbmod.*"/>
+    </def-cat>
     <def-cat n="sent">
       <cat-item tags="sent"/>
     </def-cat>
@@ -41,7 +47,24 @@
       <attr-item tags="ins"/>
       <attr-item tags="abl"/>
     </def-attr>
-
+    <def-attr n="verbclass">
+        <attr-item tags="vblex"/>
+        <attr-item tags="vbmod"/>
+        <attr-item tags="vbser"/>
+        <attr-item tags="vaux"/>
+    </def-attr>
+    <def-attr n="tense">
+        <attr-item tags="pri"/>
+        <attr-item tags="past"/>
+    </def-attr>
+    <def-attr n="person">
+        <attr-item tags="p1.sg"/>
+        <attr-item tags="p2.sg"/>
+        <attr-item tags="p3.sg"/>
+        <attr-item tags="p1.pl"/>
+        <attr-item tags="p2.pl"/>
+        <attr-item tags="p3.pl"/>
+    </def-attr>
   </section-def-attrs>
   <section-def-vars>
     <def-var n="number"/>
@@ -56,6 +79,28 @@
     </def-macro>
   </section-def-macros>
   <section-rules>
+
+    <rule comment="verbisääntö">
+      <pattern>
+        <pattern-item n="verb"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="vp" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="vp"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="verbclass"/>
+              <lit-tag v="actv"/>
+              <clip pos="1" side="tl" part="tense"/>
+              <clip pos="1" side="tl" part="person"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
     <rule comment="REGLA: SENT">
       <pattern>
