@@ -1,107 +1,243 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- -*- nxml -*- -->
 <transfer default="chunk">
+
+  <!-- {{{ cats -->
   <section-def-cats>
-    <def-cat n="nom">
+    <def-cat n="noun">
       <cat-item tags="n.*"/>
+      <cat-item tags="np.*"/>
     </def-cat>
-    <def-cat n="det">
-      <cat-item tags="det.*"/>
+    <def-cat n="prn">
+      <cat-item tags="prn.*"/>
+    </def-cat>
+    <def-cat n="prnpers">
+      <cat-item tags="prn.pers.*"/>
+    </def-cat>
+    <def-cat n="nominal">
+      <cat-item tags="n.*"/>
+      <cat-item tags="np.*"/>
+      <cat-item tags="prn.*"/>
+    </def-cat>
+    <def-cat n="infinite">
+      <cat-item tags="vblex.inf"/>
+      <cat-item tags="vblex.ger.*"/>
+      <cat-item tags="vaux.inf"/>
+      <cat-item tags="vbser.inf"/>
+      <cat-item tags="vbhaver.inf"/>
+    </def-cat>
+    <def-cat n="perfection">
+      <cat-item tags="vblex.*.pp"/>
+      <cat-item tags="vblex.pp"/>
+    </def-cat>
+    <def-cat n="haver">
+      <cat-item tags="vbhaver.*"/>
     </def-cat>
     <def-cat n="adj">
       <cat-item tags="adj.*"/>
     </def-cat>
-    <def-cat n="post">
+    <def-cat n="adp">
       <cat-item tags="post.*"/>
+      <cat-item tags="pr.*"/>
+      <cat-item tags="post"/>
+      <cat-item tags="pr"/>
+    </def-cat>
+    <def-cat n="det">
+      <cat-item tags="det.*"/>
+    </def-cat>
+    <def-cat n="cardinal">
+      <cat-item tags="num.card"/>
+      <cat-item tags="num.card.*"/>
+    </def-cat>
+    <def-cat n="num">
+      <cat-item tags="num.*"/>
+      <cat-item tags="num"/>
     </def-cat>
     <def-cat n="verb">
       <cat-item tags="vblex.*"/>
       <cat-item tags="vbser.*"/>
-      <cat-item tags="vaux.*"/>
       <cat-item tags="vbmod.*"/>
+      <cat-item tags="vaux.*"/>
+      <cat-item tags="vbhaver.*"/>
+    </def-cat>
+    <def-cat n="auxiliary">
+      <cat-item tags="vbmod.*"/>
+      <cat-item tags="vaux.*"/>
     </def-cat>
     <def-cat n="sent">
       <cat-item tags="sent"/>
     </def-cat>
   </section-def-cats>
+  <!-- }}}
+       {{{ attrs -->
   <section-def-attrs>
-    <def-attr n="a_nom">
-      <attr-item tags="n"/>
+    <def-attr n="a_case">
+      <attr-item tags="nom"/>
+      <attr-item tags="gen"/>
+      <attr-item tags="acc"/>
+      <attr-item tags="dat"/>
+      <attr-item tags="ine"/>
+      <attr-item tags="ela"/>
+      <attr-item tags="ill"/>
+      <attr-item tags="ade"/>
+      <attr-item tags="abl"/>
+      <attr-item tags="all"/>
+      <attr-item tags="par"/>
+      <attr-item tags="tra"/>
+      <attr-item tags="cmp"/>
+      <attr-item tags="lat"/>
+    </def-attr>
+    <def-attr n="a_verb">
+      <attr-item tags="vblex"/>
+      <attr-item tags="vbser"/>
+      <attr-item tags="vbmod"/>
+      <attr-item tags="vaux"/>
+    </def-attr>
+    <def-attr n="a_tense">
+      <attr-item tags="prs"/>
+      <attr-item tags="pis"/>
+      <attr-item tags="pri"/>
+      <attr-item tags="pii"/>
+      <attr-item tags="past"/>
     </def-attr>
     <def-attr n="a_adj">
       <attr-item tags="adj"/>
     </def-attr>
-    <def-attr n="a_det">
-      <attr-item tags="det"/>
+    <def-attr n="a_comp">
+      <attr-item tags="pos"/>
+      <attr-item tags="comp"/>
+      <attr-item tags="sup"/>
     </def-attr>
-    <def-attr n="nbr">
+    <def-attr n="a_adp">
+      <attr-item tags="post"/>
+      <attr-item tags="pr"/>
+    </def-attr>
+    <def-attr n="a_adv">
+      <attr-item tags="adv"/>
+    </def-attr>
+    <def-attr n="a_noun">
+      <attr-item tags="n"/>
+      <attr-item tags="n.acr"/>
+      <attr-item tags="det"/>
+      <attr-item tags="np.ant.m"/>
+      <attr-item tags="np.ant.f"/>
+      <attr-item tags="np.ant"/>
+      <attr-item tags="np.top"/>
+      <attr-item tags="np.al"/>
+      <attr-item tags="np"/>
+      <attr-item tags="np.acr"/>
+      <attr-item tags="np.acr.al"/>
+      <attr-item tags="np.al.acr"/>
+      <attr-item tags="np.org"/>
+      <attr-item tags="np.cog"/>
+      <attr-item tags="num.card"/>
+    </def-attr>
+    <def-attr n="a_nominal">
+      <attr-item tags="n.acr"/>
+      <attr-item tags="n"/>
+      <attr-item tags="np.ant.m"/>
+      <attr-item tags="np.ant.f"/>
+      <attr-item tags="np.ant"/>
+      <attr-item tags="np.top"/>
+      <attr-item tags="np.cog"/>
+      <attr-item tags="np.org"/>
+      <attr-item tags="np.al"/>
+      <attr-item tags="np"/>
+      <attr-item tags="np.acr"/>
+      <attr-item tags="np.acr.al"/>
+      <attr-item tags="np.al.acr"/>
+      <attr-item tags="num.card"/>
+      <attr-item tags="det"/>
+      <attr-item tags="prn"/>
+    </def-attr>
+    <def-attr n="a_prn">
+      <attr-item tags="prn"/>
+    </def-attr>
+    <def-attr n="a_number">
       <attr-item tags="sg"/>
       <attr-item tags="pl"/>
     </def-attr>
-    <def-attr n="a_cas">
-      <attr-item tags="nom"/>
-      <attr-item tags="acc"/>
-      <attr-item tags="dat"/>
-      <attr-item tags="gen"/>
-      <attr-item tags="loc"/>
-      <attr-item tags="ins"/>
-      <attr-item tags="abl"/>
+    <def-attr n="a_perf">
+      <attr-item tags="pp"/>
     </def-attr>
-    <def-attr n="verbclass">
-        <attr-item tags="vblex"/>
-        <attr-item tags="vbmod"/>
-        <attr-item tags="vbser"/>
-        <attr-item tags="vaux"/>
+    <def-attr n="a_pers">
+      <attr-item tags="p1.sg"/>
+      <attr-item tags="p2.sg"/>
+      <attr-item tags="p3.sg"/>
+      <attr-item tags="p1.pl"/>
+      <attr-item tags="p2.pl"/>
+      <attr-item tags="p3.pl"/>
     </def-attr>
-    <def-attr n="tense">
-        <attr-item tags="pri"/>
-        <attr-item tags="past"/>
+    <def-attr n="a_numtype">
+      <attr-item tags="card"/>
+      <attr-item tags="nocard"/>
+      <attr-item tags="ord"/>
     </def-attr>
-    <def-attr n="person">
-        <attr-item tags="p1.sg"/>
-        <attr-item tags="p2.sg"/>
-        <attr-item tags="p3.sg"/>
-        <attr-item tags="p1.pl"/>
-        <attr-item tags="p2.pl"/>
-        <attr-item tags="p3.pl"/>
+    <def-attr n="a_num">
+      <attr-item tags="num"/>
+    </def-attr>
+    <def-attr n="a_inf">
+      <attr-item tags="inf"/>
+      <attr-item tags="infa"/>
+      <attr-item tags="infe"/>
+      <attr-item tags="infma"/>
+      <attr-item tags="ger"/>
     </def-attr>
   </section-def-attrs>
+  <!-- }}}
+       {{{ vars -->
   <section-def-vars>
+    <def-var n="possess"/>
+    <def-var n="pers"/>
     <def-var n="number"/>
-    <def-var n="current_verb"/>
+    <def-var n="case"/>
+    <def-var n="tense"/>
+    <def-var n="adpcase"/>
+    <def-var n="prnmaybe"/>
+    <def-var n="adpmaybe"/>
+    <def-var n="numtype"/>
+    <def-var n="comparison"/>
   </section-def-vars>
+  <!-- }}}
+       {{{ macros -->
   <section-def-macros>
     <def-macro n="test" npar="1">
+      <let>
+        <var n="number"/>
+        <lit v=""/>
+      </let>
+    </def-macro>
+    <def-macro n="comparison-mangler" npar="1">
+      <choose>
+        <when>
+          <test>
+            <equal><clip pos="1" side="sl" part="a_comp"/><lit-tag v="comp"/></equal>
+          </test>
           <let>
-            <var n="number"/>
-            <lit v=""/>
+            <var n="comparison"/><lit-tag v="com"/>
           </let>
+        </when>
+        <when>
+          <test>
+            <equal><clip pos="1" side="sl" part="a_comp"/><lit-tag v="sup"/></equal>
+          </test>
+          <let>
+            <var n="comparison"/><lit-tag v="sup"/>
+          </let>
+        </when>
+        <otherwise>
+          <let>
+            <var n="comparison"/><lit-tag v="pos"/>
+          </let>
+        </otherwise>
+      </choose>
     </def-macro>
   </section-def-macros>
+  <!-- }}}
+       {{{ rules -->
   <section-rules>
 
-    <rule comment="verbisääntö">
-      <pattern>
-        <pattern-item n="verb"/>
-      </pattern>
-      <action>
-        <out>
-          <chunk name="vp" case="caseFirstWord">
-            <tags>
-              <tag><lit-tag v="vp"/></tag>
-            </tags>
-            <lu>
-              <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="verbclass"/>
-              <lit-tag v="actv"/>
-              <clip pos="1" side="tl" part="tense"/>
-              <clip pos="1" side="tl" part="person"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>
 
+    <!-- {{{ single word units last resorts -->
     <rule comment="REGLA: SENT">
       <pattern>
         <pattern-item n="sent"/>
@@ -119,6 +255,8 @@
         </out>
       </action>
     </rule>
-
+    <!-- }}} -->
   </section-rules>
 </transfer>
+
+<!-- vim: set foldmethod=marker: -->

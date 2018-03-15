@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <modes>
-  <!-- fin → hun --> 
+
+  <!-- fin → hun -->
 
   <mode name="fin-hun" install="yes">
     <pipeline>
       <program name="hfst-proc -e -w">
         <file name="fin-hun.automorf.hfst"/>
       </program>
+
+
       <program name="cg-proc -1 -n -w">
         <file name="fin-hun.rlx.bin"/>
       </program>
@@ -14,7 +17,7 @@
       <program name="lt-proc -b">
         <file name="fin-hun.autobil.bin"/>
       </program>
-      <program name="lrx-proc">
+      <program name="lrx-proc -m">
         <file name="fin-hun.autolex.bin"/>
       </program>
       <program name="apertium-transfer -b">
@@ -32,6 +35,7 @@
       <program name="lt-proc $1">
         <file name="fin-hun.autogen.bin"/>
       </program>
+
     </pipeline>
   </mode>
 
@@ -40,6 +44,8 @@
       <program name="hfst-proc -e -w">
         <file name="fin-hun.automorf.hfst"/>
       </program>
+
+
       <program name="cg-proc -1 -n -w">
         <file name="fin-hun.rlx.bin"/>
       </program>
@@ -47,8 +53,41 @@
       <program name="lt-proc -b">
         <file name="fin-hun.autobil.bin"/>
       </program>
-      <program name="lrx-proc -t">
+      <program name="lrx-proc -m">
         <file name="fin-hun.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-fin-hun.fin-hun.t1x"/>
+        <file name="fin-hun.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-fin-hun.fin-hun.t2x"/>
+        <file name="fin-hun.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-fin-hun.fin-hun.t3x"/>
+        <file name="fin-hun.t3x.bin"/>
+      </program>
+      <program name="lt-proc -d">
+        <file name="fin-hun.autogen.bin"/>
+      </program>
+
+    </pipeline>
+  </mode>
+
+  <mode name="fin-hun-dgen" install="no">
+    <pipeline>
+      <program name="hfst-proc">
+        <file name="fin-hun.automorf.hfst"/>
+      </program>
+
+
+      <program name="cg-proc -w">
+        <file name="fin-hun.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="fin-hun.autobil.bin"/>
       </program>
       <program name="apertium-transfer -b">
         <file name="apertium-fin-hun.fin-hun.t1x"/>
@@ -67,11 +106,10 @@
       </program>
     </pipeline>
   </mode>
- 
-  
+
   <mode name="fin-hun-morph" install="no">
     <pipeline>
-      <program name="hfst-proc -e -w">
+      <program name="hfst-proc">
         <file name="fin-hun.automorf.hfst"/>
       </program>
     </pipeline>
@@ -79,7 +117,7 @@
 
   <mode name="fin-hun-disam" install="no">
     <pipeline>
-      <program name="hfst-proc -e -w">
+      <program name="hfst-proc">
         <file name="fin-hun.automorf.hfst"/>
       </program>
       <program name="cg-conv -a"/>
@@ -89,13 +127,27 @@
     </pipeline>
   </mode>
 
-
   <mode name="fin-hun-tagger" install="no">
     <pipeline>
-      <program name="hfst-proc -e -w">
+      <program name="hfst-proc">
         <file name="fin-hun.automorf.hfst"/>
       </program>
-      <program name="cg-proc -1 -n -w">
+
+
+      <program name="cg-proc -w">
+        <file name="fin-hun.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="fin-hun-pretransfer" install="no">
+    <pipeline>
+      <program name="hfst-proc">
+        <file name="fin-hun.automorf.hfst"/>
+      </program>
+
+
+      <program name="cg-proc -w">
         <file name="fin-hun.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
@@ -104,10 +156,12 @@
 
   <mode name="fin-hun-biltrans" install="no">
     <pipeline>
-      <program name="lt-proc -e -w">
+      <program name="hfst-proc">
         <file name="fin-hun.automorf.hfst"/>
       </program>
-      <program name="cg-proc -1 -n -w">
+
+
+      <program name="cg-proc -w">
         <file name="fin-hun.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
@@ -117,12 +171,14 @@
     </pipeline>
   </mode>
 
-  <mode name="fin-hun-lextor" install="no">
+  <mode name="fin-hun-lex" install="no">
     <pipeline>
-      <program name="hfst-proc -e -w">
+      <program name="hfst-proc">
         <file name="fin-hun.automorf.hfst"/>
       </program>
-      <program name="cg-proc -1 -n -w">
+
+
+      <program name="cg-proc -w">
         <file name="fin-hun.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
@@ -135,13 +191,14 @@
     </pipeline>
   </mode>
 
-
   <mode name="fin-hun-transfer" install="no">
     <pipeline>
-      <program name="hfst-proc -e -w">
+      <program name="hfst-proc">
         <file name="fin-hun.automorf.hfst"/>
       </program>
-      <program name="cg-proc -1 -n -w">
+
+
+      <program name="cg-proc -w">
         <file name="fin-hun.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
@@ -151,7 +208,7 @@
       <program name="lrx-proc">
         <file name="fin-hun.autolex.bin"/>
       </program>
-      <program name="apertium-transfer -t -b">
+      <program name="apertium-transfer -b -t">
         <file name="apertium-fin-hun.fin-hun.t1x"/>
         <file name="fin-hun.t1x.bin"/>
       </program>
@@ -160,10 +217,12 @@
 
   <mode name="fin-hun-interchunk" install="no">
     <pipeline>
-      <program name="hfst-proc -e -w">
+      <program name="hfst-proc">
         <file name="fin-hun.automorf.hfst"/>
       </program>
-      <program name="cg-proc -1 -n -w">
+
+
+      <program name="cg-proc -w">
         <file name="fin-hun.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
@@ -177,7 +236,7 @@
         <file name="apertium-fin-hun.fin-hun.t1x"/>
         <file name="fin-hun.t1x.bin"/>
       </program>
-      <program name="apertium-interchunk">
+      <program name="apertium-interchunk -t">
         <file name="apertium-fin-hun.fin-hun.t2x"/>
         <file name="fin-hun.t2x.bin"/>
       </program>
@@ -186,10 +245,12 @@
 
   <mode name="fin-hun-postchunk" install="no">
     <pipeline>
-      <program name="hfst-proc -e -w">
+      <program name="hfst-proc">
         <file name="fin-hun.automorf.hfst"/>
       </program>
-      <program name="cg-proc -1 -n -w">
+
+
+      <program name="cg-proc -w">
         <file name="fin-hun.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
@@ -218,12 +279,15 @@
 
   <mode name="hun-fin" install="yes">
     <pipeline>
-      <program name="lt-proc">
+      <program name="lt-proc -w -e">
         <file name="hun-fin.automorf.bin"/>
       </program>
-      <program name="apertium-tagger -g">
-        <file name="hun-fin.prob"/>
+
+
+      <program name="cg-proc -w1n">
+        <file name="hun-fin.rlx.bin"/>
       </program>
+      <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
         <file name="hun-fin.autobil.bin"/>
       </program>
@@ -242,26 +306,26 @@
         <file name="apertium-fin-hun.hun-fin.t3x"/>
         <file name="hun-fin.t3x.bin"/>
       </program>
-      <program name="hfst-proc -g">
+      <program name="hfst-proc -N 1 $1">
         <file name="hun-fin.autogen.hfst"/>
       </program>
+
     </pipeline>
   </mode>
 
   <mode name="hun-fin-debug" install="no">
     <pipeline>
-      <program name="lt-proc -w">
-        <file name="hun-fin.automorf.bin"/>
+      <program name="lt-proc -w -e">
+        <file name="hun-fin.automorf-untrimmed.bin"/>
       </program>
-      <program name="cg-proc -1 -n -w">
+
+
+      <program name="cg-proc -w1n">
         <file name="hun-fin.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
         <file name="hun-fin.autobil.bin"/>
-      </program>
-      <program name="lrx-proc -m -t">
-        <file name="hun-fin.autolex.bin"/>
       </program>
       <program name="apertium-transfer -b">
         <file name="apertium-fin-hun.hun-fin.t1x"/>
@@ -280,22 +344,182 @@
       </program>
     </pipeline>
   </mode>
- 
 
-
-  <mode name="hun-fin-postchunk">
+  <mode name="hun-fin-dgen" install="no">
     <pipeline>
-      <program name="lt-proc">
+      <program name="lt-proc -w">
         <file name="hun-fin.automorf.bin"/>
       </program>
-      <program name="apertium-tagger -g">
-        <file name="hun-fin.prob"/>
+
+
+      <program name="cg-proc -w1n">
+        <file name="hun-fin.rlx.bin"/>
       </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="hun-fin.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-fin-hun.hun-fin.t1x"/>
+        <file name="hun-fin.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-fin-hun.hun-fin.t2x"/>
+        <file name="hun-fin.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-fin-hun.hun-fin.t3x"/>
+        <file name="hun-fin.t3x.bin"/>
+      </program>
+      <program name="hfst-proc -d">
+        <file name="hun-fin.autogen.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="hun-fin-morph" install="no">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="hun-fin.automorf.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="hun-fin-disam" install="no">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="hun-fin.automorf.bin"/>
+      </program>
+      <program name="cg-conv -a"/>
+      <program name="vislcg3 --trace --grammar">
+        <file name="hun-fin.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="hun-fin-tagger" install="no">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="hun-fin.automorf.bin"/>
+      </program>
+
+
+      <program name="cg-proc -w1n">
+        <file name="hun-fin.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="hun-fin-pretransfer" install="no">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="hun-fin.automorf.bin"/>
+      </program>
+
+
+      <program name="cg-proc -w1n">
+        <file name="hun-fin.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+    </pipeline>
+  </mode>
+
+  <mode name="hun-fin-biltrans" install="no">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="hun-fin.automorf.bin"/>
+      </program>
+
+
+      <program name="cg-proc -w1n">
+        <file name="hun-fin.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="hun-fin.autobil.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="hun-fin-lex" install="no">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="hun-fin.automorf.bin"/>
+      </program>
+
+
+      <program name="cg-proc -w1n">
+        <file name="hun-fin.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
         <file name="hun-fin.autobil.bin"/>
       </program>
       <program name="lrx-proc">
         <file name="hun-fin.autolex.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="hun-fin-transfer" install="no">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="hun-fin.automorf.bin"/>
+      </program>
+
+
+      <program name="cg-proc -w1n">
+        <file name="hun-fin.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="hun-fin.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -b -t">
+        <file name="apertium-fin-hun.hun-fin.t1x"/>
+        <file name="hun-fin.t1x.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="hun-fin-interchunk" install="no">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="hun-fin.automorf.bin"/>
+      </program>
+
+
+      <program name="cg-proc -w1n">
+        <file name="hun-fin.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="hun-fin.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-fin-hun.hun-fin.t1x"/>
+        <file name="hun-fin.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk -t">
+        <file name="apertium-fin-hun.hun-fin.t2x"/>
+        <file name="hun-fin.t2x.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="hun-fin-postchunk" install="no">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="hun-fin.automorf.bin"/>
+      </program>
+
+
+      <program name="cg-proc -w1n">
+        <file name="hun-fin.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="hun-fin.autobil.bin"/>
       </program>
       <program name="apertium-transfer -b">
         <file name="apertium-fin-hun.hun-fin.t1x"/>
@@ -311,107 +535,5 @@
       </program>
     </pipeline>
   </mode>
-
-
-  <mode name="hun-fin-interchunk">
-    <pipeline>
-      <program name="lt-proc">
-        <file name="hun-fin.automorf.bin"/>
-      </program>
-      <program name="apertium-tagger -g">
-        <file name="hun-fin.prob"/>
-      </program>
-      <program name="lt-proc -b">
-        <file name="hun-fin.autobil.bin"/>
-      </program>
-      <program name="lrx-proc">
-        <file name="hun-fin.autolex.bin"/>
-      </program>
-      <program name="apertium-transfer -b">
-        <file name="apertium-fin-hun.hun-fin.t1x"/>
-        <file name="hun-fin.t1x.bin"/>
-      </program>
-      <program name="apertium-interchunk">
-        <file name="apertium-fin-hun.hun-fin.t2x"/>
-        <file name="hun-fin.t2x.bin"/>
-      </program>
-    </pipeline>
-  </mode>
-
-
-  <mode name="hun-fin-transfer">
-    <pipeline>
-      <program name="lt-proc">
-        <file name="hun-fin.automorf.bin"/>
-      </program>
-      <program name="apertium-tagger -g">
-        <file name="hun-fin.prob"/>
-      </program>
-      <program name="lt-proc -b">
-        <file name="hun-fin.autobil.bin"/>
-      </program>
-      <program name="lrx-proc">
-        <file name="hun-fin.autolex.bin"/>
-      </program>
-      <program name="apertium-transfer -b">
-        <file name="apertium-fin-hun.hun-fin.t1x"/>
-        <file name="hun-fin.t1x.bin"/>
-      </program>
-    </pipeline>
-  </mode>
-
-  <mode name="hun-fin-lextor">
-    <pipeline>
-      <program name="lt-proc">
-        <file name="hun-fin.automorf.bin"/>
-      </program>
-      <program name="apertium-tagger -g">
-        <file name="hun-fin.prob"/>
-      </program>
-      <program name="lt-proc -b">
-        <file name="hun-fin.autobil.bin"/>
-      </program>
-      <program name="lrx-proc">
-        <file name="hun-fin.autolex.bin"/>
-      </program>
-    </pipeline>
-  </mode>
-
-
-  <mode name="hun-fin-biltrans">
-    <pipeline>
-      <program name="lt-proc">
-        <file name="hun-fin.automorf.bin"/>
-      </program>
-      <program name="apertium-tagger -g">
-        <file name="hun-fin.prob"/>
-      </program>
-      <program name="lt-proc -b">
-        <file name="hun-fin.autobil.bin"/>
-      </program>
-    </pipeline>
-  </mode>
-
-  <mode name="hun-fin-tagger">
-    <pipeline>
-      <program name="lt-proc">
-        <file name="hun-fin.automorf.bin"/>
-      </program>
-      <program name="apertium-tagger -g">
-        <file name="hun-fin.prob"/>
-      </program>
-    </pipeline>
-  </mode>
-
-  <mode name="hun-fin-morph">
-    <pipeline>
-      <program name="lt-proc">
-        <file name="hun-fin.automorf.bin"/>
-      </program>
-    </pipeline>
-  </mode>
-
-
-
-
 </modes>
+
