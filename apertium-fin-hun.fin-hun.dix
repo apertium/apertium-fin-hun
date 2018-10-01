@@ -132,6 +132,8 @@
 
     <!--     {{{ nouns -->
 
+    <e><p><l>kysymys<s n="n"/></l><r>kérdés<s n="n"/></r></p></e>
+    <e><p><l>nimi<s n="n"/></l><r>név<s n="n"/></r></p></e>
     <e><p><l>pikkusisko<s n="n"/></l><r>húg<s n="n"/></r></p></e>
     <e><p><l>silmä<s n="n"/></l><r>szem<s n="n"/></r></p></e>
     <e><p><l>sää<s n="n"/></l><r>idő<s n="n"/></r></p></e>
@@ -144,6 +146,7 @@
     <e><p><l>kissa<s n="n"/></l><r>macska<s n="n"/></r></p></e>
     <e><p><l>koira<s n="n"/></l><r>kutya<s n="n"/></r></p></e>
     <e><p><l>peli<s n="n"/></l><r>játék<s n="n"/></r></p></e>
+    <e><p><l>tuoli<s n="n"/></l><r>szék<s n="n"/></r></p></e>
     <e><p><l>ihminen<s n="n"/></l><r>ember<s n="n"/></r></p></e>
     <e><p><l>ikkuna<s n="n"/></l><r>ablak<s n="n"/></r></p></e>
     <e><p><l>poika<s n="n"/></l><r>fiú<s n="n"/></r></p></e>
@@ -157,11 +160,19 @@
     <e><p><l>ääni<s n="n"/></l><r>hang<s n="n"/></r></p></e>
     <e><p><l>eläin<s n="n"/></l><r>állat<s n="n"/></r></p></e>
     <e><p><l>vesi<s n="n"/></l><r>víz<s n="n"/></r></p></e>
+    <e><p><l>laskeminen<s n="n"/></l><r>számolás<s n="n"/></r></p></e>
+    <e><p><l>halli<s n="n"/></l><r>hall<s n="n"/></r></p></e>
 
     <!-- }}}
          {{{ adverbs -->
 
 
+    <e><p><l>sitten<s n="adv"/></l><r>aztán<s n="adv"/></r></p></e>
+    <e><p><l>vaiko<s n="adv"/></l><r>vagy<s n="adv"/></r></p></e>
+    <e><p><l>niin<s n="adv"/></l><r>így<s n="adv"/></r></p></e>
+    <e><p><l>tietenkin<s n="adv"/></l><r>persze<s n="adv"/></r></p></e>
+    <e><p><l>milloin<s n="adv"/></l><r>mikor<s n="adv"/></r></p></e>
+    <e><p><l>silloin<s n="adv"/></l><r>akkor<s n="adv"/></r></p></e>
     <e><p><l>ulkona<s n="adv"/></l><r>odakint<s n="adv"/></r></p></e>
     <e><p><l>kahdestaan<s n="adv"/></l><r>mindketten<s n="adv"/></r></p></e>
     <e><p><l>vain<s n="adv"/></l><r>csak<s n="adv"/></r></p></e>
@@ -240,7 +251,7 @@
     <e><p><l>kysyä<s n="vblex"/></l><r>megkérdez<s n="vblex"/></r></p></e>
     <e><p><l>kertoa<s n="vblex"/></l><r>megmond<s n="vblex"/></r></p></e>
     <e><p><l>löytää<s n="vblex"/></l><r>megtalál<s n="vblex"/></r></p></e>
-    <e><p><l>olla<s n="vblex"/></l><r>megvan<s n="vbser"/></r></p></e>
+    <e><p><l>olla<s n="vaux"/></l><r>megvan<s n="vbser"/></r></p></e>
 
 
     <!-- separable prefixes that cannot match without the particle -->
@@ -274,7 +285,7 @@
     <!-- }}}
          {{{ verb to be -->
 
-    <e><p><l>olla<s n="vblex"/></l><r>van<s n="vbser"/></r></p></e>
+    <e><p><l>olla<s n="vaux"/></l><r>van<s n="vbser"/></r></p></e>
 
     <!-- }}}
          {{{auxiliaries -->
@@ -302,15 +313,12 @@
     <e><p><l>vaikka<s n="cnjadv"/></l><r>bár<s n="cnjadv"/></r></p></e>
     <e><p><l>sitten<s n="cnjadv"/></l><r>aztán<s n="cnjadv"/></r></p></e>
     <e><p><l>jos<s n="cnjadv"/></l><r>ha<s n="cnjadv"/></r></p></e>
-    <e><p><l>milloin<s n="cnjadv"/></l><r>mikor<s n="cnjadv"/></r></p></e>
     <e><p><l>siis<s n="cnjcoo"/></l><r>így<s n="cnjadv"/></r></p></e>
     <e><p><l>tai<s n="cnjcoo"/></l><r>vagy<s n="cnjadv"/></r></p></e>
     <e><p><l>joka<s n="cnjsub"/></l><r>azt<s n="cnjadv"/></r></p></e>
     <e><p><l>että<s n="cnjsub"/></l><r>da<s n="cnjadv"/></r></p></e>
-    <e><p><l>mutta<s n="cnjcoo"/></l><r>de<s n="cnjadv"/></r></p></e>
-    <e><p><l>kun<s n="cnjsub"/></l><r>akkor<s n="cnjadv"/></r></p></e>
+    <e><p><l>mutta<s n="cnjcoo"/></l><r>de<s n="cnjcoo"/></r></p></e>
     <e><p><l>ja<s n="cnjcoo"/></l><r>és<s n="cnjcoo"/></r></p></e>
-    <e><p><l>ja<s n="cnjcoo"/></l><r>és<s n="cnjadv"/></r></p></e>
     <e><p><l>ja<s n="cnjcoo"/></l><r>meg<s n="cnjadv"/></r></p></e>
     <e><p><l>siis<s n="cnjadv"/></l><r>persze<s n="cnjadv"/></r></p></e>
 
@@ -378,8 +386,8 @@
 
     <e><p><l>alla<s n="post"/></l><r>alá<s n="post"/></r></p></e>
     <e><p><l>alla<s n="post"/></l><r>alám<s n="post"/></r></p></e>
-    <e><p><l>ennen<s n="post"/></l><r>előtt<s n="post"/></r></p></e>
-    <e><p><l>edessä<s n="post"/></l><r>elől<s n="post"/></r></p></e>
+    <e><p><l>edessä<s n="post"/></l><r>előtt<s n="post"/></r></p></e>
+    <e><p><l>edestä<s n="post"/></l><r>elől<s n="post"/></r></p></e>
     <e><p><l>takana<s n="post"/></l><r>mögött<s n="post"/></r></p></e>
     <e><p><l>takaa<s n="post"/></l><r>mögül<s n="post"/></r></p></e>
 
@@ -490,6 +498,7 @@
     <!--
          }}}
      {{{ bugs
+     }}}
     -->
 
 

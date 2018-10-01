@@ -85,6 +85,10 @@
       <attr-item tags="tra"/>
       <attr-item tags="cmp"/>
       <attr-item tags="lat"/>
+      <attr-item tags="ses"/>
+      <attr-item tags="ins"/>
+      <attr-item tags="ess"/>
+      <attr-item tags="lat"/>
     </def-attr>
     <def-attr n="a_verb">
       <attr-item tags="vblex"/>
@@ -159,7 +163,7 @@
     <def-attr n="a_perf">
       <attr-item tags="pp"/>
     </def-attr>
-    <def-attr n="a_pers">
+    <def-attr n="a_person">
       <attr-item tags="p1.sg"/>
       <attr-item tags="p2.sg"/>
       <attr-item tags="p3.sg"/>
@@ -181,6 +185,20 @@
       <attr-item tags="infe"/>
       <attr-item tags="infma"/>
       <attr-item tags="ger"/>
+    </def-attr>
+    <def-attr n="a_poss">
+      <attr-item tags="pxsg1"/>
+      <attr-item tags="pxsg2"/>
+      <attr-item tags="pxsg3"/>
+      <attr-item tags="pxpl1"/>
+      <attr-item tags="pxpl2"/>
+      <attr-item tags="pxsp3"/>
+      <attr-item tags="px1ss"/>
+      <attr-item tags="px2ss"/>
+      <attr-item tags="px3ss"/>
+      <attr-item tags="px1sp"/>
+      <attr-item tags="px2sp"/>
+      <attr-item tags="px3sp"/>
     </def-attr>
   </section-def-attrs>
   <!-- }}}
@@ -231,6 +249,108 @@
         </otherwise>
       </choose>
     </def-macro>
+    <def-macro n="case-mangler" npar="1">
+      <choose>
+        <when>
+          <test>
+            <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="dat"/></equal>
+          </test>
+          <let>
+            <clip pos="1" side="tl" part="a_case"/><lit-tag v="ade"/>
+          </let>
+        </when>
+        <when>
+          <test>
+            <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="ses"/></equal>
+          </test>
+          <let>
+            <clip pos="1" side="tl" part="a_case"/><lit-tag v="ade"/>
+          </let>
+        </when>
+        <when>
+          <test>
+            <and>
+              <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal>
+              <equal><clip pos="1" side="sl" part="a_number"/><lit-tag v="pl"/></equal>
+            </and>
+          </test>
+          <let>
+            <clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/>
+          </let>
+        </when>
+        <when>
+          <test>
+            <and>
+              <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal>
+              <equal><clip pos="1" side="sl" part="a_number"/><lit-tag v="sg"/></equal>
+            </and>
+          </test>
+          <let>
+            <clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/>
+          </let>
+        </when>
+        <when>
+          <test>
+            <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="ins"/></equal>
+          </test>
+          <let>
+            <clip pos="1" side="tl" part="a_case"/><lit-tag v="ade"/>
+          </let>
+        </when>
+      </choose>
+    </def-macro>
+    <def-macro n="possessive-mangler" npar="1">
+      <choose>
+        <when>
+          <test>
+            <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px1ss"/></equal>
+          </test>
+          <let>
+            <clip pos="1" side="tl" part="a_poss"/><lit-tag v="pxsg1"/>
+          </let>
+        </when>
+        <when>
+          <test>
+            <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px2ss"/></equal>
+          </test>
+          <let>
+            <clip pos="1" side="tl" part="a_poss"/><lit-tag v="pxsg2"/>
+          </let>
+        </when>
+        <when>
+          <test>
+            <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px3ss"/></equal>
+          </test>
+          <let>
+            <clip pos="1" side="tl" part="a_poss"/><lit-tag v="pxsp3"/>
+          </let>
+        </when>
+        <when>
+          <test>
+            <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px1sp"/></equal>
+          </test>
+          <let>
+            <clip pos="1" side="tl" part="a_poss"/><lit-tag v="pxpl1"/>
+          </let>
+        </when>
+        <when>
+          <test>
+            <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px2sp"/></equal>
+          </test>
+          <let>
+            <clip pos="1" side="tl" part="a_poss"/><lit-tag v="pxpl2"/>
+          </let>
+        </when>
+        <when>
+          <test>
+            <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px3sp"/></equal>
+          </test>
+          <let>
+            <clip pos="1" side="tl" part="a_poss"/><lit-tag v="pxsp3"/>
+          </let>
+        </when>
+      </choose>
+    </def-macro>
   </section-def-macros>
   <!-- }}}
        {{{ rules -->
@@ -238,7 +358,51 @@
 
 
     <!-- {{{ single word units last resorts -->
-    <rule comment="REGLA: SENT">
+    <rule comment="nouns: swap possessives, map cases">
+      <pattern>
+        <pattern-item n="noun"/>
+      </pattern>
+      <action>
+        <call-macro n="possessive-mangler">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="case-mangler">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="verb" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="V"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment="verbs: add actv for now">
+      <pattern>
+        <pattern-item n="verb"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="verb" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="V"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_verb"/>
+              <lit-tag v="actv"/>
+              <clip pos="1" side="tl" part="a_tense"/>
+              <clip pos="1" side="tl" part="a_person"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment="deault punct rule">
       <pattern>
         <pattern-item n="sent"/>
       </pattern>
