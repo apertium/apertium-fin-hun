@@ -132,7 +132,12 @@
 
     <!--     {{{ nouns -->
 
+    <e><p><l>maa<s n="n"/></l><r>föld<s n="n"/></r></p></e>
+    <e><p><l>kreikka<s n="n"/></l><r>görög<s n="n"/></r></p></e>
     <e><p><l>kysymys<s n="n"/></l><r>kérdés<s n="n"/></r></p></e>
+    <e><p><l>päivä<s n="n"/></l><r>nap<s n="n"/></r></p></e>
+    <e><p><l>planeetta<s n="n"/></l><r>bolygó<s n="n"/></r></p></e>
+    <e><p><l>aurinkokunta<s n="n"/></l><r>naprendszer<s n="n"/></r></p></e>
     <e><p><l>nimi<s n="n"/></l><r>név<s n="n"/></r></p></e>
     <e><p><l>pikkusisko<s n="n"/></l><r>húg<s n="n"/></r></p></e>
     <e><p><l>silmä<s n="n"/></l><r>szem<s n="n"/></r></p></e>
@@ -140,6 +145,7 @@
     <e><p><l>pikkupoika<s n="n"/></l><r>kisfiú<s n="n"/></r></p></e>
     <e><p><l>pikkutyttö<s n="n"/></l><r>kislány<s n="n"/></r></p></e>
     <e><p><l>lapsi<s n="n"/></l><r>gyerek<s n="n"/></r></p></e>
+    <e><p><l>solmu<s n="n"/></l><r>csomó<s n="n"/></r></p></e>
     <e><p><l>pöytä<s n="n"/></l><r>asztal<s n="n"/></r></p></e>
     <e><p><l>äiti<s n="n"/></l><r>anya<s n="n"/></r></p></e>
     <e><p><l>puutarha<s n="n"/></l><r>kert<s n="n"/></r></p></e>
@@ -162,6 +168,8 @@
     <e><p><l>vesi<s n="n"/></l><r>víz<s n="n"/></r></p></e>
     <e><p><l>laskeminen<s n="n"/></l><r>számolás<s n="n"/></r></p></e>
     <e><p><l>halli<s n="n"/></l><r>hall<s n="n"/></r></p></e>
+    <e><p><l>auto<s n="n"/></l><r>auto<s n="n"/></r></p></e>
+    <e><p><l>auto<s n="n"/></l><r>kocsi<s n="n"/></r></p></e>
 
     <!-- }}}
          {{{ adverbs -->
@@ -244,6 +252,7 @@
     <e><p><l>kuunnella<s n="vblex"/></l><r>hallgat<s n="vblex"/></r></p></e>
     <e><p><l>tulla<s n="vblex"/></l><r>jön<s n="vblex"/></r></p></e>
     <e><p><l>löytää<s n="vblex"/></l><r>talál<s n="vblex"/></r></p></e>
+    <e><p><l>odottaa<s n="vblex"/></l><r>vár<s n="vblex"/></r></p></e>
 
 
     <!-- hun meg stuff -->
