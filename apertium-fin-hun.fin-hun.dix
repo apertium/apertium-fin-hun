@@ -133,6 +133,95 @@
     <!--     {{{ nouns -->
 
 
+    <e><p><l>hedelmäliha<s n="n"/></l><r>gyümölcshús<s n="n"/></r></p></e>
+    <e><p><l>persikka<s n="n"/></l><r>barack<s n="n"/></r></p></e>
+    <e><p><l>aromi<s n="n"/></l><r>ízesítőanyag<s n="n"/></r></p></e>
+    <e><p><l>lisäaine<s n="n"/></l><r>adalékanyag<s n="n"/></r></p></e>
+    <e><p><l>koristelu<s n="n"/></l><r>díszítés<s n="n"/></r></p></e>
+    <e><p><l>jätski<s n="n"/></l><r>fagyi<s n="n"/></r></p></e>
+    <e><p><l>pallo<s n="n"/></l><r>gombóc<s n="n"/></r></p></e>
+    <e><p><l>massa<s n="n"/></l><r>tömeg<s n="n"/></r></p></e>
+    <e><p><l>muoto<s n="n"/></l><r>forma<s n="n"/></r></p></e>
+    <e><p><l>vuosi<s n="n"/></l><r>év<s n="n"/></r></p></e>
+    <e><p><l>egyptiläinen<s n="n"/></l><r>egyiptomi<s n="n"/></r></p></e>
+    <e><p><l>lähetys<s n="n"/></l><r>közvetítés<s n="n"/></r></p></e>
+    <e><p><l>resepti<s n="n"/></l><r>recept<s n="n"/></r></p></e>
+    <e><p><l>suppilo<s n="n"/></l><r>tölcsér<s n="n"/></r></p></e>
+    <e><p><l>suosio<s n="n"/></l><r>népszerűség<s n="n"/></r></p></e>
+    <e><p><l>tikku<s n="n"/></l><r>pálcika<s n="n"/></r></p></e>
+    <e><p><l>nimeäminen<s n="n"/></l><r>elnevezés<s n="n"/></r></p></e>
+    <e><p><l>liikenne<s n="n"/></l><r>forgalom<s n="n"/></r></p></e>
+    <e><p><l>vuosisata<s n="n"/></l><r>század<s n="n"/></r></p></e>
+    <e><p><l>edusta<s n="n"/></l><r>elő<s n="n"/></r></p></e>
+    <e><p><l>viini<s n="n"/></l><r>bor<s n="n"/></r></p></e>
+    <e><p><l>hapankirsikka<s n="n"/></l><r>meggy<s n="n"/></r></p></e>
+    <e><p><l>aprikoosi<s n="n"/></l><r>kajszibarack<s n="n"/></r></p></e>
+    <e><p><l>metsämansikka<s n="n"/></l><r>földieper<s n="n"/></r></p></e>
+    <e><p><l>punaviini<s n="n"/></l><r>vörösbor<s n="n"/></r></p></e>
+    <e><p><l>maa<s n="n"/></l><r>ország<s n="n"/></r></p></e>
+    <e><p><l>muoto<s n="n"/></l><r>alak<s n="n"/></r></p></e>
+    <e><p><l>vaikutus<s n="n"/></l><r>hatás<s n="n"/></r></p></e>
+    <e><p><l>sairas<s n="n"/></l><r>beteg<s n="n"/></r></p></e>
+    <e><p><l>kilometri<s n="n"/></l><r>kilométer<s n="n"/></r></p></e>
+    <e><p><l>lisäaine<s n="n"/></l><r>adalékanyag<s n="n"/></r></p></e>
+    <e><p><l>valmistelu<s n="n"/></l><r>elkészítés<s n="n"/></r></p></e>
+    <e><p><l>vallankumous<s n="n"/></l><r>forradalom<s n="n"/></r></p></e>
+    <e><p><l>tuotanto<s n="n"/></l><r>előállítás<s n="n"/></r></p></e>
+    <e><p><l>haaste<s n="n"/></l><r>kihívás<s n="n"/></r></p></e>
+    <e><p><l>valmistaja<s n="n"/></l><r>készítő<s n="n"/></r></p></e>
+    <e><p><l>valmistus<s n="n"/></l><r>készítés<s n="n"/></r></p></e>
+    <e><p><l>ruokasuola<s n="n"/></l><r>konyhasó<s n="n"/></r></p></e>
+    <e><p><l>jäähdytysseos<s n="n"/></l><r>hűtőkeverék<s n="n"/></r></p></e>
+    <e><p><l>säiliö<s n="n"/></l><r>tartály<s n="n"/></r></p></e>
+    <e><p><l>massa<s n="n"/></l><r>massza<s n="n"/></r></p></e>
+    <e><p><l>pala<s n="n"/></l><r>rész<s n="n"/></r></p></e>
+    <e><p><l>teknologia<s n="n"/></l><r>technológia<s n="n"/></r></p></e>
+    <e><p><l>aine<s n="n"/></l><r>anyag<s n="n"/></r></p></e>
+    <e><p><l>ilmakupla<s n="n"/></l><r>légbuborék<s n="n"/></r></p></e>
+    <e><p><l>vitamiini<s n="n"/></l><r>vitamin<s n="n"/></r></p></e>
+    <e><p><l>valmistaja<s n="n"/></l><r>készítő<s n="n"/></r></p></e>
+    <e><p><l>emulgointiaine<s n="n"/></l><r>emulgeálószer<s n="n"/></r></p></e>
+    <e><p><l>rasva<s n="n"/></l><r>zsír<s n="n"/></r></p></e>
+    <e><p><l>laji<s n="n"/></l><r>fajta<s n="n"/></r></p></e>
+    <e><p><l>vaihtoehto<s n="n"/></l><r>változat<s n="n"/></r></p></e>
+    <e><p><l>erikoisuus<s n="n"/></l><r>különlegesség<s n="n"/></r></p></e>
+    <e><p><l>tapa<s n="n"/></l><r>mód<s n="n"/></r></p></e>
+    <e><p><l>homogenointi<s n="n"/></l><r>homogenizálás<s n="n"/></r></p></e>
+    <e><p><l>pastörointi<s n="n"/></l><r>pasztörizálás<s n="n"/></r></p></e>
+    <e><p><l>munankeltuainen<s n="n"/></l><r>tojássárga<s n="n"/></r></p></e>
+    <e><p><l>hedelmäjäätelö<s n="n"/></l><r>gyümölcsfagylalt<s n="n"/></r></p></e>
+    <e><p><l>sitrus<s n="n"/></l><r>citrus<s n="n"/></r></p></e>
+    <e><p><l>paisti<s n="n"/></l><r>sült<s n="n"/></r></p></e>
+    <e><p><l>hedelmämehu<s n="n"/></l><r>gyümölcslé<s n="n"/></r></p></e>
+    <e><p><l>aromi<s n="n"/></l><r>aroma<s n="n"/></r></p></e>
+    <e><p><l>parfait<s n="n"/></l><r>parfé<s n="n"/></r></p></e>
+    <e><p><l>kermavaahto<s n="n"/></l><r>tejszínhab<s n="n"/></r></p></e>
+    <e><p><l>sorbetti<s n="n"/></l><r>sörbet<s n="n"/></r></p></e>
+    <e><p><l>esi-isä<s n="n"/></l><r>ős<s n="n"/></r></p></e>
+    <e><p><l>jääpala<s n="n"/></l><r>jégkocka<s n="n"/></r></p></e>
+    <e><p><l>paisti<s n="n"/></l><r>sült<s n="n"/></r></p></e>
+    <e><p><l>vaahto<s n="n"/></l><r>hab<s n="n"/></r></p></e>
+    <e><p><l>munanvalkuainen<s n="n"/></l><r>tojásfehérje<s n="n"/></r></p></e>
+    <e><p><l>pari<s n="n"/></l><r>pár<s n="n"/></r></p></e>
+    <e><p><l>juomapilli<s n="n"/></l><r>szívószál<s n="n"/></r></p></e>
+    <e><p><l>uuni<s n="n"/></l><r>sütő<s n="n"/></r></p></e>
+    <e><p><l>kuorrutus<s n="n"/></l><r>öntet<s n="n"/></r></p></e>
+    <e><p><l>paisti<s n="n"/></l><r>sült<s n="n"/></r></p></e>
+    <e><p><l>kunto<s n="n"/></l><r>feltét<s n="n"/></r></p></e>
+    <e><p><l>rakas<s n="n"/></l><r>drága<s n="n"/></r></p></e>
+    <e><p><l>tuote<s n="n"/></l><r>termék<s n="n"/></r></p></e>
+    <e><p><l>jäde<s n="n"/></l><r>fagyi<s n="n"/></r></p></e>
+    <e><p><l>maitojauhe<s n="n"/></l><r>tejpor<s n="n"/></r></p></e>
+    <e><p><l>muna<s n="n"/></l><r>tojás<s n="n"/></r></p></e>
+    <e><p><l>vanilja<s n="n"/></l><r>vanília<s n="n"/></r></p></e>
+    <e><p><l>makeinen<s n="n"/></l><r>édesség<s n="n"/></r></p></e>
+    <e><p><l>lasimalja<s n="n"/></l><r>üvegkehely<s n="n"/></r></p></e>
+    <e><p><l>vohveli<s n="n"/></l><r>ostya<s n="n"/></r></p></e>
+    <e><p><l>elin<s n="n"/></l><r>szerv<s n="n"/></r></p></e>
+    <e><p><l>kissa<s n="n"/></l><r>macska<s n="n"/></r></p></e>
+    <e><p><l>lima<s n="n"/></l><r>nyálka<s n="n"/></r></p></e>
+    <e><p><l>sana<s n="n"/></l><r>szó<s n="n"/></r></p></e>
+    <e><p><l>varis<s n="n"/></l><r>varjú<s n="n"/></r></p></e>
     <e><p><l>aakkonen<s n="n"/></l><r>betű<s n="n"/></r></p></e>
     <e><p><l>aakkosjärjestys<s n="n"/></l><r>ábécérend<s n="n"/></r></p></e>
     <e><p><l>aallonharja<s n="n"/></l><r>hullámhegy<s n="n"/></r></p></e>
@@ -1521,7 +1610,7 @@
     <e><p><l>ruutuhyppely<s n="n"/></l><r>ugróiskola<s n="n"/></r></p></e>
     <e><p><l>ruuvi<s n="n"/></l><r>csavar<s n="n"/></r></p></e>
     <e><p><l>ryhmä<s n="n"/></l><r>csoport<s n="n"/></r></p></e>
-    <e><p><l>ryssä<s n="n"/></l><r>ruszki<s n="n"/></r></p></e>
+    <e r="LR"><p><l>ryssä<s n="n"/></l><r>ruszki<s n="n"/></r></p></e>
     <e><p><l>räkä<s n="n"/></l><r>nyálka<s n="n"/></r></p></e>
     <e><p><l>räkä<s n="n"/></l><r>takony<s n="n"/></r></p></e>
     <e><p><l>saago<s n="n"/></l><r>szágó<s n="n"/></r></p></e>
@@ -1976,13 +2065,50 @@
     <e><p><l>öljy<s n="n"/></l><r>olaj<s n="n"/></r></p></e>
     <e><p><l>öljyväri<s n="n"/></l><r>olajfesték<s n="n"/></r></p></e>
 
+    <e><p><l>dekagramma<s n="n"/></l><r>dkg<s n="n"/></r></p></e>
 
     <!-- }}}
          {{{ adverbs -->
 
 
+    <e><p><l>erityisesti<s n="adv"/></l><r>különösen<s n="adv"/></r></p></e>
+    <e><p><l>ainoastaan<s n="adv"/></l><r>kizárólag<s n="adv"/></r></p></e>
+    <e><p><l>ehkä<s n="adv"/></l><r>esetleg<s n="adv"/></r></p></e>
+    <e><p><l>myöhemmin<s n="adv"/></l><r>majd<s n="adv"/></r></p></e>
+    <e><p><l>siksi<s n="adv"/></l><r>mert<s n="adv"/></r></p></e>
+    <e><p><l>kuitenkin<s n="adv"/></l><r>hiszen<s n="adv"/></r></p></e>
+    <e><p><l>pääasiallisesti<s n="adv"/></l><r>főképpen<s n="adv"/></r></p></e>
+    <e><p><l>sitten<s n="adv"/></l><r>miután<s n="adv"/></r></p></e>
+    <e><p><l>kunnes<s n="adv"/></l><r>amíg<s n="adv"/></r></p></e>
+    <e><p><l>lyhyesti<s n="adv"/></l><r>röviden<s n="adv"/></r></p></e>
+    <e><p><l>yleensä<s n="adv"/></l><r>általában<s n="adv"/></r></p></e>
+    <e><p><l>alkuperäisesti<s n="adv"/></l><r>házilag<s n="adv"/></r></p></e>
+    <e><p><l>ylös<s n="adv"/></l><r>fel<s n="adv"/></r></p></e>
+    <e><p><l>suunnilleen<s n="adv"/></l><r>körülbelül<s n="adv"/></r></p></e>
+    <e><p><l>ensin<s n="adv"/></l><r>először<s n="adv"/></r></p></e>
+    <e><p><l>melko<s n="adv"/></l><r>igen<s n="adv"/></r></p></e>
+    <e><p><l>suunnilleen<s n="adv"/></l><r>mintegy<s n="adv"/></r></p></e>
+    <e><p><l>jo<s n="adv"/></l><r>már<s n="adv"/></r></p></e>
+    <e><p><l>esimerkiksi<s n="adv"/></l><r>például<s n="adv"/></r></p></e>
+    <e><p><l>tosin<s n="adv"/></l><r>ám<s n="adv"/></r></p></e>
+    <e><p><l>kunnes<s n="adv"/></l><r>addig<s n="adv"/></r></p></e>
+    <e><p><l>lopulta<s n="adv"/></l><r>végén<s n="adv"/></r></p></e>
+    <e><p><l>lopulta<s n="adv"/></l><r>végére<s n="adv"/></r></p></e>
+    <e><p><l>jälkeen<s n="adv"/></l><r>miútán<s n="adv"/></r></p></e>
+    <e><p><l>pian<s n="adv"/></l><r>hamar<s n="adv"/></r></p></e>
+    <e><p><l>pois<s n="adv"/></l><r>el<s n="adv"/></r></p></e>
+    <e><p><l>silloin<s n="adv"/></l><r>akkoriban<s n="adv"/></r></p></e>
+    <e><p><l>eniten<s n="adv"/></l><r>leginkább<s n="adv"/></r></p></e>
+    <e><p><l>kuin<s n="adv"/></l><r>mint<s n="adv"/></r></p></e>
+    <e><p><l>aikoinaan<s n="adv"/></l><r>régen<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>miksi<s n="adv"/></l><r>mért<s n="adv"/></r></p></e>
+    <e><p><l>lävitse<s n="adv"/></l><r>révén<s n="adv"/></r></p></e>
+    <e><p><l>samoin<s n="adv"/></l><r>viszont<s n="adv"/></r></p></e>
+    <e><p><l>vähintään<s n="adv"/></l><r>legalább<s n="adv"/></r></p></e>
+    <e><p><l>kauan<s n="adv"/></l><r>ideig<s n="adv"/></r></p></e>
+    <e><p><l>sinnetänne<s n="adv"/></l><r>néhol<s n="adv"/></r></p></e>
     <e><p><l>sitten<s n="adv"/></l><r>aztán<s n="adv"/></r></p></e>
-    <e><p><l>vaiko<s n="adv"/></l><r>vagy<s n="adv"/></r></p></e>
+    <e><p><l>noin<s n="adv"/></l><r>vagy<s n="adv"/></r></p></e>
     <e><p><l>niin<s n="adv"/></l><r>így<s n="adv"/></r></p></e>
     <e><p><l>tietenkin<s n="adv"/></l><r>persze<s n="adv"/></r></p></e>
     <e><p><l>milloin<s n="adv"/></l><r>mikor<s n="adv"/></r></p></e>
@@ -2026,6 +2152,50 @@
 
 
 
+    <e><p><l>pakastaa<s n="vblex"/></l><r>fagyaszt<s n="vblex"/></r></p></e>
+    <e><p><l>tarjoilla<s n="vblex"/></l><r>szervíroz<s n="vblex"/></r></p></e>
+    <e><p><l>stabiloitua<s n="vblex"/></l><r>stabilizál<s n="vblex"/></r></p></e>
+    <e><p><l>tapahtua<s n="vblex"/></l><r>lesz<s n="vblex"/></r></p></e>
+    <e><p><l>reunustaa<s n="vblex"/></l><r>bélel<s n="vblex"/></r></p></e>
+    <e><p><l>sekoittaa<s n="vblex"/></l><r>kevered<s n="vblex"/></r></p></e>
+    <e><p><l>asettaa<s n="vblex"/></l><r>állít<s n="vblex"/></r></p></e>
+    <e><p><l>myydä<s n="vblex"/></l><r>árusít<s n="vblex"/></r></p></e>
+    <e><p><l>avata<s n="vblex"/></l><r>nyit<s n="vblex"/></r></p></e>
+    <e><p><l>tuoda<s n="vblex"/></l><r>hozat<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>olla<s n="vblex"/></l><r>lehet<s n="vblex"/></r></p></e>
+    <e><p><l>keksiä<s n="vblex"/></l><r>feltalál<s n="vblex"/></r></p></e>
+    <e><p><l>virkistää<s n="vblex"/></l><r>élénkít<s n="vblex"/></r></p></e>
+    <e><p><l>valmistaa<s n="vblex"/></l><r>készül<s n="vblex"/></r></p></e>
+    <e><p><l>tarjota<s n="vblex"/></l><r>szolgál<s n="vblex"/></r></p></e>
+    <e><p><l>pakata<s n="vblex"/></l><r>csomagol<s n="vblex"/></r></p></e>
+    <e><p><l>kuluttaa<s n="vblex"/></l><r>fogyaszt<s n="vblex"/></r></p></e>
+    <e><p><l>tarjota<s n="vblex"/></l><r>szolgáltat<s n="vblex"/></r></p></e>
+    <e><p><l>päätyä<s n="vblex"/></l><r>kerül<s n="vblex"/></r></p></e>
+    <e><p><l>maksaa<s n="vblex"/></l><r>kerül<s n="vblex"/></r></p></e>
+    <e><p><l>nauttia<s n="vblex"/></l><r>kedvel<s n="vblex"/></r></p></e>
+    <e><p><l>palata<s n="vblex"/></l><r>visszatér<s n="vblex"/></r></p></e>
+    <e><p><l>tuoda<s n="vblex"/></l><r>hoz<s n="vblex"/></r></p></e>
+    <e><p><l>tehdä<s n="vblex"/></l><r>tesz<s n="vblex"/></r></p></e>
+    <e><p><l>antaa<s n="vblex"/></l><r>ad<s n="vblex"/></r></p></e>
+    <e><p><l>saapua<s n="vblex"/></l><r>jut<s n="vblex"/></r></p></e>
+    <e><p><l>patentoitattaa<s n="vblex"/></l><r>szabadalmaztat<s n="vblex"/></r></p></e>
+    <e><p><l>jäätää<s n="vblex"/></l><r>fagylal<s n="vblex"/></r></p></e>
+    <e><p><l>muuttua<s n="vblex"/></l><r>válik<s n="vblex"/></r></p></e>
+    <e><p><l>toimia<s n="vblex"/></l><r>szerepel<s n="vblex"/></r></p></e>
+    <e><p><l>esittää<s n="vblex"/></l><r>szerepel<s n="vblex"/></r></p></e>
+    <e><p><l>houkutella<s n="vblex"/></l><r>vonz<s n="vblex"/></r></p></e>
+    <e><p><l>valmistaa<s n="vblex"/></l><r>készít<s n="vblex"/></r></p></e>
+    <e><p><l>kiertää<s n="vblex"/></l><r>forog<s n="vblex"/></r></p></e>
+    <e><p><l>valmistaa<s n="vblex"/></l><r>végez<s n="vblex"/></r></p></e>
+    <e><p><l>tehdä<s n="vblex"/></l><r>dolgoz<s n="vblex"/></r></p></e>
+    <e><p><l>saturoida<s n="vblex"/></l><r>telít<s n="vblex"/></r></p></e>
+    <e><p><l>stabilisoida<s n="vblex"/></l><r>stailizál<s n="vblex"/></r></p></e>
+    <e><p><l>suurentaa<s n="vblex"/></l><r>növel<s n="vblex"/></r></p></e>
+    <e><p><l>käyttää<s n="vblex"/></l><r>használ<s n="vblex"/></r></p></e>
+    <e><p><l>viimeistellä<s n="vblex"/></l><r>elkészül<s n="vblex"/></r></p></e>
+    <e><p><l>viilentää<s n="vblex"/></l><r>hűt<s n="vblex"/></r></p></e>
+    <e><p><l>rikkoa<s n="vblex"/></l><r>tör<s n="vblex"/></r></p></e>
+    <e><p><l>levittää<s n="vblex"/></l><r>elterjed<s n="vblex"/></r></p></e>
     <e><p><l>aamiaistaa<s n="vblex"/></l><r>megreggelizik<s n="vblex"/></r></p></e>
     <e><p><l>aamiaistaa<s n="vblex"/></l><r>reggelizik<s n="vblex"/></r></p></e>
     <e><p><l>aivastaa<s n="vblex"/></l><r>tüsszent<s n="vblex"/></r></p></e>
@@ -2038,7 +2208,6 @@
     <e><p><l>asettaa<s n="vblex"/></l><r>helyez<s n="vblex"/></r></p></e>
     <e><p><l>blogata<s n="vblex"/></l><r>blogol<s n="vblex"/></r></p></e>
     <e><p><l>ehkäistä<s n="vblex"/></l><r>megakadályoz<s n="vblex"/></r></p></e>
-    <e><p><l>elin<s n="n"/></l><r>szerv<s n="n"/></r></p></e>
     <e><p><l>elää<s n="vblex"/></l><r>él<s n="vblex"/></r></p></e>
     <e><p><l>etsiä<s n="vblex"/></l><r>keres<s n="vblex"/></r></p></e>
     <e><p><l>evakuoida<s n="vblex"/></l><r>evakuál<s n="vblex"/></r></p></e>
@@ -2078,7 +2247,6 @@
     <e><p><l>kirjoittaa<s n="vblex"/></l><r>ír<s n="vblex"/></r></p></e>
     <e><p><l>kirjoittaa<s n="vblex"/></l><r>megír<s n="vblex"/></r></p></e>
     <e><p><l>kirkua<s n="vblex"/></l><r>sikolt<s n="vblex"/></r></p></e>
-    <e><p><l>kissa<s n="n"/></l><r>macska<s n="n"/></r></p></e>
     <e><p><l>kouluttaa<s n="vblex"/></l><r>iskoláz<s n="vblex"/></r></p></e>
     <e><p><l>kunnioittaa<s n="vblex"/></l><r>becsülni<s n="vblex"/></r></p></e>
     <e><p><l>kuohia<s n="vblex"/></l><r>herél<s n="vblex"/></r></p></e>
@@ -2099,7 +2267,6 @@
     <e><p><l>laukata<s n="vblex"/></l><r>vágtat<s n="vblex"/></r></p></e>
     <e><p><l>laulaa<s n="vblex"/></l><r>dalol<s n="vblex"/></r></p></e>
     <e><p><l>leikkiä<s n="vblex"/></l><r>játszik<s n="vblex"/></r></p></e>
-    <e><p><l>lima<s n="n"/></l><r>nyálka<s n="n"/></r></p></e>
     <e><p><l>liuottaa<s n="vblex"/></l><r>feloszlat<s n="vblex"/></r></p></e>
     <e><p><l>lukea<s n="vblex"/></l><r>olvas<s n="vblex"/></r></p></e>
     <e><p><l>luulla<s n="vblex"/></l><r>hisz<s n="vblex"/></r></p></e>
@@ -2266,7 +2433,7 @@
     <e><p><l>sitten<s n="cnjadv"/></l><r>aztán<s n="cnjadv"/></r></p></e>
     <e><p><l>jos<s n="cnjadv"/></l><r>ha<s n="cnjadv"/></r></p></e>
     <e><p><l>siis<s n="cnjcoo"/></l><r>így<s n="cnjadv"/></r></p></e>
-    <e><p><l>tai<s n="cnjcoo"/></l><r>vagy<s n="cnjadv"/></r></p></e>
+    <e><p><l>tai<s n="cnjcoo"/></l><r>vagy<s n="cnjcoo"/></r></p></e>
     <e><p><l>joka<s n="cnjsub"/></l><r>azt<s n="cnjadv"/></r></p></e>
     <e><p><l>että<s n="cnjsub"/></l><r>da<s n="cnjadv"/></r></p></e>
     <e><p><l>mutta<s n="cnjcoo"/></l><r>de<s n="cnjcoo"/></r></p></e>
@@ -2296,13 +2463,18 @@
 
 
 
+    <e><p><l>kaikki<s n="prn"/></l><r>mind<s n="prn"/></r></p></e>
+    <e><p><l>sellainen<s n="prn"/></l><r>olyan<s n="prn"/></r></p></e>
+    <e><p><l>tällainen<s n="prn"/></l><r>ilyen<s n="prn"/></r></p></e>
     <e><p><l>se<s n="prn"/></l><r>itt<s n="prn"/></r></p></e>
     <e><p><l>nämä<s n="prn"/></l><r>ott<s n="prn"/></r></p></e>
     <e><p><l>tämä<s n="prn"/></l><r>ez<s n="prn"/></r></p></e>
     <e><p><l>tuo<s n="prn"/></l><r>az<s n="prn"/></r></p></e>
     <e><p><l>muu<s n="prn"/></l><r>más<s n="adj"/></r></p></e>
+    <e><p><l>joka<s n="prn"/></l><r>ami<s n="prn"/></r></p></e>
     <e><p><l>jokin<s n="prn"/></l><r>valami<s n="prn"/></r></p></e>
     <e><p><l>mitään<s n="prn"/></l><r>semmi<s n="prn"/></r></p></e>
+    <e><p><l>joka<s n="prn"/></l><r>amely<s n="prn"/></r></p></e>
     <e><p><l>silloin<s n="adv"/></l><r>ekkor<s n="prn"/></r></p></e>
 
     <!-- }}}
@@ -2319,6 +2491,53 @@
 
 
 
+    <e><p><l>tarvittava<s n="adj"/></l><r>szükséges<s n="adj"/></r></p></e>
+    <e><p><l>hoikka<s n="adj"/></l><r>sovány<s n="adj"/></r></p></e>
+    <e><p><l>kaikenlainen<s n="adj"/></l><r>különféle<s n="adj"/></r></p></e>
+    <e><p><l>rikas<s n="adj"/></l><r>tehetős<s n="adj"/></r></p></e>
+    <e><p><l>teollinen<s n="adj"/></l><r>ipari<s n="adj"/></r></p></e>
+    <e><p><l>jatkuva<s n="adj"/></l><r>folyamatos<s n="adj"/></r></p></e>
+    <e><p><l>itävaltalainen<s n="adj"/></l><r>osztrák<s n="adj"/></r></p></e>
+    <e><p><l>suosittu<s n="adj"/></l><r>kedvelt<s n="adj"/></r></p></e>
+    <e><p><l>tusinallinen<s n="adj"/></l><r>tízféle<s n="adj"/></r></p></e>
+    <e><p><l>vaalea<s n="adj"/></l><r>világos<s n="adj"/></r></p></e>
+    <e><p><l>manuaalinen<s n="adj"/></l><r>kézi<s n="adj"/></r></p></e>
+    <e><p><l>valmis<s n="adj"/></l><r>kész<s n="adj"/></r></p></e>
+    <e><p><l>sähköinen<s n="adj"/></l><r>elektromos<s n="adj"/></r></p></e>
+    <e><p><l>tärkeä<s n="adj"/></l><r>fontos<s n="adj"/></r></p></e>
+    <e><p><l>kermainen<s n="adj"/></l><r>krémes<s n="adj"/></r></p></e>
+    <e><p><l>merkittävä<s n="adj"/></l><r>jelentős<s n="adj"/></r></p></e>
+    <e><p><l>tärkeä<s n="adj"/></l><r>fontos<s n="adj"/></r></p></e>
+    <e><p><l>saavutettava<s n="adj"/></l><r>található<s n="adj"/></r></p></e>
+    <e><p><l>moderni<s n="adj"/></l><r>modern<s n="adj"/></r></p></e>
+    <e><p><l>tärkeä<s n="adj"/></l><r>fontos<s n="adj"/></r></p></e>
+    <e><p><l>noudettava<s n="adj"/></l><r>kapható<s n="adj"/></r></p></e>
+    <e><p><l>moninainen<s n="adj"/></l><r>többféle<s n="adj"/></r></p></e>
+    <e><p><l>tietty<s n="adj"/></l><r>ismert<s n="adj"/></r></p></e>
+    <e><p><l>lyhyt<s n="adj"/></l><r>rövid<s n="adj"/></r></p></e>
+    <e><p><l>tarpeellinen<s n="adj"/></l><r>szügséges<s n="adj"/></r></p></e>
+    <e><p><l>kokonainen<s n="adj"/></l><r>egész<s n="adj"/></r></p></e>
+    <e><p><l>luonnollinen<s n="adj"/></l><r>természetes<s n="adj"/></r></p></e>
+    <e><p><l>kepeä<s n="adj"/></l><r>kevés<s n="adj"/></r></p></e>
+    <e><p><l>kova<s n="adj"/></l><r>kemény<s n="adj"/></r></p></e>
+    <e><p><l>liimaisa<s n="adj"/></l><r>ragacsos<s n="adj"/></r></p></e>
+    <e><p><l>japanilainen<s n="adj"/></l><r>japán<s n="adj"/></r></p></e>
+    <e><p><l>monimutkainen<s n="adj"/></l><r>összetett<s n="adj"/></r></p></e>
+    <e><p><l>korealainen<s n="adj"/></l><r>koreai<s n="adj"/></r></p></e>
+    <e><p><l>maistuva<s n="adj"/></l><r>ízesítő<s n="adj"/></r></p></e>
+    <e><p><l>keinotekoinen<s n="adj"/></l><r>mesterséges<s n="adj"/></r></p></e>
+    <e><p><l>kiinalainen<s n="adj"/></l><r>kínai<s n="adj"/></r></p></e>
+    <e><p><l>sekoitettu<s n="adj"/></l><r>kevert<s n="adj"/></r></p></e>
+    <e><p><l>jäinen<s n="adj"/></l><r>jeges<s n="adj"/></r></p></e>
+    <e><p><l>rikas<s n="adj"/></l><r>tehető<s n="adj"/></r></p></e>
+    <e><p><l>keskimmäinen<s n="adj"/></l><r>földközi<s n="adj"/></r></p></e>
+    <e><p><l>merellinen<s n="adj"/></l><r>tengeri<s n="adj"/></r></p></e>
+    <e><p><l>usea<s n="adj"/></l><r>sok<s n="adj"/></r></p></e>
+    <e><p><l>tunnettu<s n="adj"/></l><r>híres<s n="adj"/></r></p></e>
+    <e><p><l>kuvallinen<s n="adj"/></l><r>képes<s n="adj"/></r></p></e>
+    <e><p><l>erityinen<s n="adj"/></l><r>különleges<s n="adj"/></r></p></e>
+    <e><p><l>laaja<s n="adj"/></l><r>széles<s n="adj"/></r></p></e>
+    <e><p><l>sekalainen<s n="adj"/></l><r>különfele<s n="adj"/></r></p></e>
     <e><p><l>aktiivi<s n="adj"/></l><r>activum<s n="adj"/></r></p></e>
     <e><p><l>egyptiläinen<s n="adj"/></l><r>egyiptomi<s n="adj"/></r></p></e>
     <e><p><l>ensimmäinen<s n="adj"/></l><r>első<s n="adj"/></r></p></e>
@@ -2371,7 +2590,6 @@
     <e><p><l>ruotsalainen<s n="adj"/></l><r>svéd<s n="adj"/></r></p></e>
     <e><p><l>ruskea<s n="adj"/></l><r>barna<s n="adj"/></r></p></e>
     <e><p><l>saksalainen<s n="adj"/></l><r>német<s n="adj"/></r></p></e>
-    <e><p><l>sana<s n="n"/></l><r>szó<s n="n"/></r></p></e>
     <e><p><l>sininen<s n="adj"/></l><r>kék<s n="adj"/></r></p></e>
     <e><p><l>slovenialainen<s n="adj"/></l><r>szlovén<s n="adj"/></r></p></e>
     <e><p><l>sulaa<s n="adj"/></l><r>olvad<s n="adj"/></r></p></e>
@@ -2388,7 +2606,6 @@
     <e><p><l>vanha<s n="adj"/></l><r>vén<s n="adj"/></r></p></e>
     <e><p><l>vanha<s n="adj"/></l><r>öreg<s n="adj"/></r></p></e>
     <e><p><l>vanhempi<s n="adj"/></l><r>szülő<s n="adj"/></r></p></e>
-    <e><p><l>varis<s n="n"/></l><r>varjú<s n="n"/></r></p></e>
     <e><p><l>vieras<s n="adj"/></l><r>vendég<s n="adj"/></r></p></e>
     <e><p><l>vihreä<s n="adj"/></l><r>zöld<s n="adj"/></r></p></e>
     <e><p><l>viisivuotias<s n="adj"/></l><r>ötéves<s n="adj"/></r></p></e>
@@ -2400,6 +2617,9 @@
     <!-- }}}
          {{{ adpositions -->
 
+    <e><p><l>kanssa<s n="post"/></l><r>össze<s n="post"/></r></p></e>
+    <e><p><l>ulkopuolella<s n="post"/></l><r>kívül<s n="post"/></r></p></e>
+    <e><p><l>takia<s n="post"/></l><r>miatt<s n="post"/></r></p></e>
     <e><p><l>alla<s n="post"/></l><r>alá<s n="post"/></r></p></e>
     <e><p><l>alla<s n="post"/></l><r>alám<s n="post"/></r></p></e>
     <e><p><l>edessä<s n="post"/></l><r>előtt<s n="post"/></r></p></e>
@@ -2425,6 +2645,9 @@
     <e><p><l>seitsemän<s n="num"/></l><r>het<s n="num"/></r></p></e>
     <e><p><l>kahdeksan<s n="num"/></l><r>nyulcs<s n="num"/></r></p></e>
     <e><p><l>yhdeksän<s n="num"/></l><r>kilenc<s n="num"/></r></p></e>
+    <e><p><l>sata<s n="num"/></l><r>száz<s n="num"/></r></p></e>
+    <e><p><l>tuhat<s n="num"/></l><r>ezer<s n="num"/></r></p></e>
+    <e><p><l>viisituhatta<s n="num"/></l><r>ötezer<s n="num"/></r></p></e>
 
 
     <!-- digit loops -->
@@ -2452,7 +2675,7 @@
 
     <!-- romans -->
 
-    <e><re>[XVILMC][XVILMC]*</re><p><l><s n="num"/></l><r><s n="num"/></r></p></e>
+    <e><re>[XVILMC][XVILMC]*</re><p><l><s n="adj"/></l><r><s n="adj"/></r></p></e>
 
     <!-- odd digit exprs -->
 
@@ -2465,6 +2688,17 @@
     <e><i>Budapest<s n="np"/></i></e>
     <e><i>Jancsi<s n="np"/></i></e>
     <e><i>Mari<s n="np"/></i></e>
+    <e><i>Na<s n="np"/></i></e>
+    <e><i>Sándor<s n="np"/></i></e>
+    <e><i>Charles<s n="np"/></i></e>
+    <e><i>Kristóf<s n="np"/></i></e>
+    <e><i>Ecuador<s n="np"/></i></e>
+    <e><i>Kolumbia<s n="np"/></i></e>
+
+
+    <e><p><l>Hippokrates<s n="np"/></l><r>Hippokratész<s n="np"/></r></p></e>
+    <e><p><l>Pariisi<s n="np"/></l><r>Párizs<s n="np"/></r></p></e>
+    <e><p><l>Kolumbia<s n="np"/></l><r>Columbia<s n="np"/></r></p></e>
 
 
 
@@ -2481,6 +2715,7 @@
     <e><p><l>he<s n="ij"/></l><r>heh<s n="ij"/></r></p></e>
     <e><p><l>ha<s n="ij"/></l><r>ha<s n="ij"/></r></p></e>
     <e><p><l>hei<s n="ij"/></l><r>szia<s n="ij"/></r></p></e>
+    <e><p><l>ei<s n="ij"/></l><r>nem<s n="ij"/></r></p></e>
     <e><p><l>kiitos<s n="ij"/></l><r>köszönöm<s n="ij"/></r></p></e>
     <e><p><l>anteeksi<s n="ij"/></l><r>sajnos<s n="ij"/></r></p></e>
     <e><p><l>pliis<s n="ij"/></l><r>kérem<s n="ij"/></r></p></e>

@@ -88,7 +88,11 @@
       <attr-item tags="ses"/>
       <attr-item tags="ins"/>
       <attr-item tags="ess"/>
+      <attr-item tags="ess1"/>
       <attr-item tags="lat"/>
+      <attr-item tags="dela"/>
+      <attr-item tags="sub"/>
+      <attr-item tags="ses"/>
     </def-attr>
     <def-attr n="a_verb">
       <attr-item tags="vblex"/>
@@ -193,12 +197,12 @@
       <attr-item tags="pxpl1"/>
       <attr-item tags="pxpl2"/>
       <attr-item tags="pxsp3"/>
-      <attr-item tags="px1ss"/>
-      <attr-item tags="px2ss"/>
-      <attr-item tags="px3ss"/>
-      <attr-item tags="px1sp"/>
-      <attr-item tags="px2sp"/>
-      <attr-item tags="px3sp"/>
+      <attr-item tags="px1sg"/>
+      <attr-item tags="px2sg"/>
+      <attr-item tags="px3sg"/>
+      <attr-item tags="px1pl"/>
+      <attr-item tags="px2pl"/>
+      <attr-item tags="px3pl"/>
     </def-attr>
   </section-def-attrs>
   <!-- }}}
@@ -297,56 +301,56 @@
             <clip pos="1" side="tl" part="a_case"/><lit-tag v="ade"/>
           </let>
         </when>
+        <when>
+          <test>
+            <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="ses"/></equal>
+          </test>
+          <let>
+            <clip pos="1" side="tl" part="a_case"/><lit-tag v="ade"/>
+          </let>
+        </when>
+        <when>
+          <test>
+            <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="sub"/></equal>
+          </test>
+          <let>
+            <clip pos="1" side="tl" part="a_case"/><lit-tag v="all"/>
+          </let>
+        </when>
+        <when>
+          <test>
+            <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="dela"/></equal>
+          </test>
+          <let>
+            <clip pos="1" side="tl" part="a_case"/><lit-tag v="abl"/>
+          </let>
+        </when>
+        <when>
+          <test>
+            <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="ess1"/></equal>
+          </test>
+          <let>
+            <clip pos="1" side="tl" part="a_case"/><lit-tag v="ess"/>
+          </let>
+        </when>
       </choose>
     </def-macro>
     <def-macro n="possessive-mangler" npar="1">
       <choose>
         <when>
           <test>
-            <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px1ss"/></equal>
+            <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px3sg"/></equal>
           </test>
           <let>
-            <clip pos="1" side="tl" part="a_poss"/><lit-tag v="pxsg1"/>
+            <clip pos="1" side="tl" part="a_poss"/><lit-tag v="px3sp"/>
           </let>
         </when>
         <when>
           <test>
-            <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px2ss"/></equal>
+            <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px3pl"/></equal>
           </test>
           <let>
-            <clip pos="1" side="tl" part="a_poss"/><lit-tag v="pxsg2"/>
-          </let>
-        </when>
-        <when>
-          <test>
-            <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px3ss"/></equal>
-          </test>
-          <let>
-            <clip pos="1" side="tl" part="a_poss"/><lit-tag v="pxsp3"/>
-          </let>
-        </when>
-        <when>
-          <test>
-            <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px1sp"/></equal>
-          </test>
-          <let>
-            <clip pos="1" side="tl" part="a_poss"/><lit-tag v="pxpl1"/>
-          </let>
-        </when>
-        <when>
-          <test>
-            <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px2sp"/></equal>
-          </test>
-          <let>
-            <clip pos="1" side="tl" part="a_poss"/><lit-tag v="pxpl2"/>
-          </let>
-        </when>
-        <when>
-          <test>
-            <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px3sp"/></equal>
-          </test>
-          <let>
-            <clip pos="1" side="tl" part="a_poss"/><lit-tag v="pxsp3"/>
+            <clip pos="1" side="tl" part="a_poss"/><lit-tag v="px3sp"/>
           </let>
         </when>
       </choose>
@@ -358,6 +362,25 @@
 
 
     <!-- {{{ single word units last resorts -->
+    <rule comment="lone perfect tag mapping">
+      <pattern>
+        <pattern-item n="perfection"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="verb" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="PCP"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_verb"/>
+              <lit-tag v="pasv.pp.pst.sg.nom"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
     <rule comment="nouns: swap possessives, map cases">
       <pattern>
         <pattern-item n="noun"/>
@@ -398,6 +421,21 @@
               <clip pos="1" side="tl" part="a_tense"/>
               <clip pos="1" side="tl" part="a_person"/>
             </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment="deault det rule : hide">
+      <pattern>
+        <pattern-item n="det"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="Det" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="DET"/></tag>
+            </tags>
+            <b/>
           </chunk>
         </out>
       </action>
