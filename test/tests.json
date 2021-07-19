@@ -1,0 +1,10 @@
+{
+    "fin-hun": {
+        "input": "fin-hun-input.txt",
+        "mode": "fin-hun"
+    },
+    "hun-fin": {
+        "input": "hun-fin-input.txt",
+        "mode": "hun-fin"
+    }
+}
